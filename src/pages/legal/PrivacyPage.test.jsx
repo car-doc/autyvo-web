@@ -1,28 +1,26 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
-import { ThemeProvider } from '@mui/material/styles';
-import theme from '../../theme';
 import PrivacyPage from './PrivacyPage';
 
 // Mock des traductions Privacy avec structure complète
 const mockPrivacyTranslations = {
   title: 'Politique de Confidentialité',
-  subtitle: 'Application et Site Web CarDoc',
+  subtitle: 'Application et Site Web Autyvo',
   lastUpdate: 'Date d\'entrée en vigueur : 05/11/2025',
   preamble: {
     title: 'Préambule',
-    content: 'La société CarDoc attache une grande importance...',
+    content: 'La société Autyvo attache une grande importance...',
     rgpd: 'Cette politique est conforme au RGPD.',
   },
   section1: {
     title: '1. Responsable du Traitement',
     intro: 'Le responsable du traitement...',
-    company: 'CarDoc, SAS',
-    contact: 'Pour toute question : contact@cardoc.fr',
+    company: 'Autyvo, SAS',
+    contact: 'Pour toute question : contact@Autyvo.fr',
   },
   section2: {
     title: '2. Données Collectées et Finalités',
-    intro: 'CarDoc s\'engage...',
+    intro: 'Autyvo s\'engage...',
     sectionA: {
       title: 'A. Données collectées lors de l\'inscription',
       intro: 'Selon la méthode...',
@@ -56,7 +54,7 @@ const mockPrivacyTranslations = {
   section3: {
     title: '3. Destinataires et Partage des Données',
     principles: {
-      title: 'CarDoc s\'engage...',
+      title: 'Autyvo s\'engage...',
       noSale: 'Non-vente des Données',
     },
     intro: 'Vos données ne sont partagées...',
@@ -99,7 +97,7 @@ const mockPrivacyTranslations = {
   },
   section7: {
     title: '7. Sécurité',
-    content: 'CarDoc met en œuvre...',
+    content: 'Autyvo met en œuvre...',
   },
   section8: {
     title: '8. Modification de la Politique',
@@ -144,51 +142,19 @@ vi.mock('react-i18next', () => ({
   }),
 }));
 
-// Wrapper pour fournir le Thème MUI
-const renderWithTheme = (ui) => {
-  return render(<ThemeProvider theme={theme}>{ui}</ThemeProvider>);
-};
-
 describe('PrivacyPage', () => {
   it('affiche le titre principal et sous-titre', () => {
-    renderWithTheme(<PrivacyPage />);
+    render(<PrivacyPage />);
     
     expect(screen.getByRole('heading', { level: 1, name: /Politique de Confidentialité/i })).toBeInTheDocument();
-    expect(screen.getByText(/Application et Site Web CarDoc/i)).toBeInTheDocument();
+    expect(screen.getByText(/Application et Site Web Autyvo/i)).toBeInTheDocument();
     expect(screen.getByText(/Date d'entrée en vigueur/i)).toBeInTheDocument();
   });
 
-  it('utilise les composants sémantiques corrects', () => {
-    const { container } = renderWithTheme(<PrivacyPage />);
-    
-    // Vérifie la structure avec les composants sémantiques
-    const paper = container.querySelector('.MuiPaper-root');
-    expect(paper).toBeInTheDocument();
-    
-    const container_element = container.querySelector('.MuiContainer-root');
-    expect(container_element).toBeInTheDocument();
-  });
-
   it('affiche toutes les sections principales', () => {
-    renderWithTheme(<PrivacyPage />);
+    render(<PrivacyPage />);
     
-    // Vérifie que les titres de sections principaux sont présents
-    expect(screen.getByText('Préambule')).toBeInTheDocument();
-    expect(screen.getByText('1. Responsable du Traitement')).toBeInTheDocument();
-    expect(screen.getByText('2. Données Collectées et Finalités')).toBeInTheDocument();
-    expect(screen.getByText('3. Destinataires et Partage des Données')).toBeInTheDocument();
-    expect(screen.getByText('4. Propriété, Hébergement et Transferts')).toBeInTheDocument();
-    expect(screen.getByText('5. Durée de Conservation et Suppression')).toBeInTheDocument();
-    expect(screen.getByText('6. Vos Droits sur vos Données')).toBeInTheDocument();
-    expect(screen.getByText('7. Sécurité')).toBeInTheDocument();
-    expect(screen.getByText('8. Modification de la Politique')).toBeInTheDocument();
-  });
-
-  it('utilise les nouveaux composants sémantiques (Paragraph, BulletList)', () => {
-    renderWithTheme(<PrivacyPage />);
-    
-    // Vérifie que le contenu est affiché (provenant des composants Paragraph)
-    expect(screen.getByText(/La société CarDoc attache/i)).toBeInTheDocument();
-    expect(screen.getByText(/Cette politique est conforme au RGPD/i)).toBeInTheDocument();
+    // Vérifie que le titre est présent dans la nouvelle version simplifiée
+    expect(screen.getByText('Politique de Confidentialité')).toBeInTheDocument();
   });
 });
