@@ -92,8 +92,8 @@
         "title": "Establishment Verification",
         "icon": "✅",
         "scenario": "You add an invoice from a garage",
-        "aiAction": "The system automatically verifies the establishment, confirms it's an approved center, and certifies the document's authenticity to strengthen your history's value.",
-        "benefit": "Certified history and maximum trust"
+        "aiAction": "The system automatically verifies the establishment, confirms it's an approved center, and validates the document's authenticity to strengthen your history's value.",
+        "benefit": "Verified history and maximum trust"
       }
     ]
   },

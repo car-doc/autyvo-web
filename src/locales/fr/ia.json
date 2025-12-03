@@ -92,8 +92,8 @@
         "title": "Vérification d'Établissement",
         "icon": "✅",
         "scenario": "Vous ajoutez une facture d'un garage",
-        "aiAction": "Le système vérifie automatiquement l'établissement, confirme qu'il s'agit d'un centre agréé et certifie l'authenticité du document pour renforcer la valeur de votre historique.",
-        "benefit": "Historique certifié et confiance maximale"
+        "aiAction": "Le système vérifie automatiquement l'établissement, confirme qu'il s'agit d'un centre agréé et valide l'authenticité du document pour renforcer la valeur de votre historique.",
+        "benefit": "Historique vérifié et confiance maximale"
       }
     ]
   },

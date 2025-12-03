@@ -6,8 +6,8 @@
   "hero": {
     "title": "Suivez l'entretien de votre véhicule au quotidien et partagez son histoire en toute transparence.",
     "subtitle": "AUTYVO Trace : la traçabilité complète pour prouver l'état réel et l'histoire de votre véhicule.",
-    "description": "Transformez chaque intervention en preuve de valeur et obtenez un historique certifié de votre véhicule.",
-    "cta": "Télécharger AUTYVO GRATUITEMENT et créez votre Histoire Certifiée",
+    "description": "Transformez chaque intervention en preuve de valeur et obtenez un historique vérifié de votre véhicule.",
+    "cta": "Télécharger AUTYVO GRATUITEMENT et créez votre Histoire Vérifiée",
     "ctaShort": "Télécharger"
   },
   "howItWorks": {
@@ -131,7 +131,7 @@
       {
         "name": "Sophie L.",
         "role": "Acheteuse",
-        "quote": "J'ai enfin pu acheter d'occasion en toute sérénité. Tout était vérifié, certifié. Si le vendeur n'a pas d'AUTYVO Trace, je passe mon chemin."
+        "quote": "J'ai enfin pu acheter d'occasion en toute sérénité. Tout était vérifié et contrôlé. Si le vendeur n'a pas d'AUTYVO Trace, je passe mon chemin."
       }
     ]
   },
@@ -140,7 +140,7 @@
     "items": [
       {
         "question": "Qu'est-ce que l'AUTYVO Trace ?",
-        "answer": "L'AUTYVO Trace est le système qui transforme votre gestion quotidienne en valeur certifiée. Chaque action enregistrée devient automatiquement une preuve vérifiable pour les futurs acheteurs."
+        "answer": "L'AUTYVO Trace est le système qui transforme votre gestion quotidienne en valeur vérifiée. Chaque action enregistrée devient automatiquement une preuve vérifiable pour les futurs acheteurs."
       },
       {
         "question": "Comment fonctionne le moteur de vérification ?",
@@ -152,7 +152,7 @@
       },
       {
         "question": "L'application est-elle gratuite ?",
-        "answer": "Oui, l'application est GRATUITE à vie ! Utilisez tous les outils pour gérer votre véhicule et bâtir votre historique complet sans jamais rien payer.\n\nL'AUTYVO Trace Certifiée est un service Premium. Notre garantie de vérification est si puissante qu'elle se monétise lors de la revente. Vous ne payez que pour transformer votre historique en une preuve de valeur concrète et infalsifiable."
+        "answer": "Oui, l'application est GRATUITE à vie ! Utilisez tous les outils pour gérer votre véhicule et bâtir votre historique complet sans jamais rien payer.\n\nL'AUTYVO Trace Vérifiée est un service Premium. Notre garantie de vérification est si puissante qu'elle se monétise lors de la revente. Vous ne payez que pour transformer votre historique en une preuve de valeur concrète et infalsifiable."
       },
       {
         "question": "Mes données sont-elles sécurisées ?",
