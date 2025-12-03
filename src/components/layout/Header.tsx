@@ -48,22 +48,10 @@ const Header: React.FC = () => {
               {t('header.nav.features')}
             </button>
             <Link
-              to="/ia"
-              className="text-brand-secondary hover:text-brand-primary transition-colors"
-            >
-              {t('header.nav.technologies')}
-            </Link>
-            <Link
               to="/pro"
               className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
               {t('header.nav.professionals')}
-            </Link>
-            <Link
-              to="/blog"
-              className="text-brand-secondary hover:text-brand-primary transition-colors"
-            >
-              {t('header.nav.blog')}
             </Link>
             <Link
               to="/contact"
@@ -98,22 +86,10 @@ const Header: React.FC = () => {
               {t('header.nav.features')}
             </button>
             <button
-              onClick={() => handleNavigation('/ia')}
-              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
-            >
-              {t('header.nav.technologies')}
-            </button>
-            <button
               onClick={() => handleNavigation('/pro')}
               className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
               {t('header.nav.professionals')}
-            </button>
-            <button
-              onClick={() => handleNavigation('/blog')}
-              className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
-            >
-              {t('header.nav.blog')}
             </button>
             <button
               onClick={() => handleNavigation('/contact')}
