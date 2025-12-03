@@ -74,7 +74,7 @@
   },
   "whatToTrace": {
     "title": "What Should You Track?",
-    "subtitle": "Document your vehicle's entire life for maximum value",
+    "subtitle": "Record your vehicle's entire life to maximize its value",
     "items": [
       {
         "category": "Mechanical Maintenance",
@@ -146,7 +146,7 @@
   },
   "cta": {
     "title": "Start Tracking Today",
-    "subtitle": "Download AUTYVO for free and build the history that adds value to your vehicle",
+    "subtitle": "Download AUTYVO for free and automatically generate the history that adds value to your vehicle",
     "button": "Download for FREE"
   }
 }

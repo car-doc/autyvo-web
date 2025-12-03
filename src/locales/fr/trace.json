@@ -74,7 +74,7 @@
   },
   "whatToTrace": {
     "title": "Que Faut-il Tracer ?",
-    "subtitle": "Documentez l'intégralité de la vie de votre véhicule pour une valeur maximale",
+    "subtitle": "Enregistrez l'intégralité de la vie de votre véhicule pour maximiser sa valeur",
     "items": [
       {
         "category": "Entretiens mécaniques",
@@ -146,7 +146,7 @@
   },
   "cta": {
     "title": "Commencez à Tracer Dès Aujourd'hui",
-    "subtitle": "Téléchargez AUTYVO gratuitement et construisez l'historique qui valorise votre véhicule",
+    "subtitle": "Téléchargez AUTYVO gratuitement et générez automatiquement l'historique qui valorise votre véhicule",
     "button": "Télécharger GRATUITEMENT"
   }
 }

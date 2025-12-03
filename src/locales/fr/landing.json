@@ -6,8 +6,8 @@
   "hero": {
     "title": "Suivez l'entretien de votre véhicule au quotidien et partagez son histoire en toute transparence.",
     "subtitle": "AUTYVO Trace : la traçabilité complète pour prouver l'état réel et l'histoire de votre véhicule.",
-    "description": "Documentez chaque intervention, construisez un historique complet et prouvez la valeur réelle de votre véhicule.",
-    "cta": "Télécharger AUTYVO GRATUITEMENT et bâtissez votre Histoire Certifiée",
+    "description": "Transformez chaque intervention en preuve de valeur et obtenez un historique certifié de votre véhicule.",
+    "cta": "Télécharger AUTYVO GRATUITEMENT et créez votre Histoire Certifiée",
     "ctaShort": "Télécharger"
   },
   "howItWorks": {
@@ -140,7 +140,7 @@
     "items": [
       {
         "question": "Qu'est-ce que l'AUTYVO Trace ?",
-        "answer": "L'AUTYVO Trace est le système qui transforme votre gestion quotidienne en valeur certifiée. Chaque action que vous documentez devient une preuve vérifiable pour les futurs acheteurs."
+        "answer": "L'AUTYVO Trace est le système qui transforme votre gestion quotidienne en valeur certifiée. Chaque action enregistrée devient automatiquement une preuve vérifiable pour les futurs acheteurs."
       },
       {
         "question": "Comment fonctionne le moteur de vérification ?",
