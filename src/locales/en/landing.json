@@ -41,27 +41,27 @@
     "subtitle": "The complete solution that simplifies management, facilitates maintenance, and maximizes your vehicle's value.",
     "items": [
       {
-        "emoji": "🚗",
+        "image": "zero_papier.png",
         "title": "Zero paperwork, everything is centralized",
         "description": "AUTYVO automatically centralizes all your vehicle documents (invoices, insurance, technical inspections, etc.), putting an end to lost papers and administrative oversights."
       },
       {
-        "emoji": "⏱️",
+        "image": "Scanne.png",
         "title": "Organize and classify in seconds",
         "description": "Thanks to intelligent recognition, take a photo of your documents (invoices, insurance, technical inspections...): everything is instantly classified, archived and accessible on the app."
       },
       {
-        "emoji": "🧠",
+        "image": "Entretien_planifie.png",
         "title": "Planned and stress-free maintenance",
         "description": "Our intelligent engine automatically creates a maintenance plan tailored to your vehicle and sends you precise reminders so you never miss a critical deadline."
       },
       {
-        "emoji": "🛡️",
+        "image": "Bouclier.png",
         "title": "Enhanced reliability and maximized longevity",
         "description": "Anticipate problems, maintain rigorous tracking and reduce the risk of unexpected breakdowns to ensure your vehicle's long-term reliability."
       },
       {
-        "emoji": "📈",
+        "image": "Autyvo_trace.png",
         "title": "Enhance your vehicle with AUTYVO Trace",
         "description": "Share a complete, secure and professional history of your vehicle: buyers gain confidence, and you justify a better resale price."
       }

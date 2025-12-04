@@ -14,6 +14,11 @@ import stickyImage from '@/assets/images/app/dashboard-screen.jpeg';
 import benefitsImage from '@/assets/images/app/agenda-screen.jpg';
 import traceImage from '@/assets/images/report/report-cover-page.jpeg';
 import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
+import zeroPapierImg from '@/assets/images/app/zero_papier.png';
+import scanneImg from '@/assets/images/app/Scanne.png';
+import entretienPlanifieImg from '@/assets/images/app/Entretien_planifie.png';
+import bouclierImg from '@/assets/images/app/Bouclier.png';
+import autyvoTraceImg from '@/assets/images/app/Autyvo_trace.png';
 import TrustSection from '@/components/sections/TrustSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import FaqSection from '@/components/sections/FaqSection';
@@ -22,6 +27,14 @@ function LandingPage() {
   const { t } = useTranslation('landing');
   const location = useLocation();
   const [showStickyButton, setShowStickyButton] = useState(false);
+
+  const benefitImages: Record<string, string> = {
+    'zero_papier.png': zeroPapierImg,
+    'Scanne.png': scanneImg,
+    'Entretien_planifie.png': entretienPlanifieImg,
+    'Bouclier.png': bouclierImg,
+    'Autyvo_trace.png': autyvoTraceImg,
+  };
 
   // Gestion du scroll au montage si hash dans l'URL
   useEffect(() => {
@@ -110,14 +123,20 @@ function LandingPage() {
 
             <div className="grid lg:grid-cols-[1fr_400px] gap-12 items-start">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {(t('benefits.items', { returnObjects: true }) as Array<{ emoji: string; title: string; description: string }>).map((benefit, index) => (
+                {(t('benefits.items', { returnObjects: true }) as Array<{ image: string; title: string; description: string }>).map((benefit, index) => (
                   <div
                     key={index}
                     className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow ${
                       index === 4 ? 'md:col-span-2' : ''
                     }`}
                   >
-                    <div className="text-5xl mb-6">{benefit.emoji}</div>
+                    <div className="mb-6">
+                      <img
+                        src={benefitImages[benefit.image]}
+                        alt={benefit.title}
+                        className="w-20 h-20 object-contain"
+                      />
+                    </div>
                     <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                   </div>
