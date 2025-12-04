@@ -38,32 +38,32 @@
   },
   "benefits": {
     "title": "Les Bénéfices AUTYVO",
-    "subtitle": "Une solution complète pour gérer, entretenir et valoriser votre véhicule",
+    "subtitle": "La solution complète qui simplifie la gestion, facilite l'entretien et maximise la valeur de votre véhicule.",
     "items": [
       {
         "emoji": "🚗",
-        "title": "Simplifiez la gestion de votre véhicule",
-        "description": "AUTYVO centralise automatiquement tous vos documents, pour en finir avec les papiers perdus et les oubliés."
+        "title": "Zéro papier, tout est centralisé",
+        "description": "AUTYVO centralise automatiquement tous vos documents de véhicule (factures, assurances, CT, etc.), mettant fin aux papiers perdus et aux oublis administratifs."
       },
       {
-        "emoji": "🔍",
-        "title": "Organisez tout en quelques secondes",
-        "description": "Scannez votre plaque et vos documents : factures, assurances, contrôles techniques… tout est classé et accessible."
+        "emoji": "⏱️",
+        "title": "Organisez et classez en quelques secondes",
+        "description": "Grâce à la reconnaissance intelligente, prenez une photo de vos documents (factures, assurances, contrôles techniques...) : tout est instantanément classé, archivé et accessible sur l'application."
       },
       {
         "emoji": "🧠",
-        "title": "Planification intelligente",
-        "description": "Notre moteur intelligent crée un plan de maintenance automatique et vous envoie des rappels pour ne rien oublier."
+        "title": "Un entretien planifié et sans stress",
+        "description": "Notre moteur intelligent crée automatiquement un plan de maintenance adapté à votre véhicule et vous envoie des rappels précis pour ne jamais manquer une échéance critique."
       },
       {
-        "emoji": "🔧",
-        "title": "Un véhicule plus fiable et mieux entretenu",
-        "description": "Anticipez les pannes et maximisez la longévité de votre véhicule grâce à un suivi rigoureux."
+        "emoji": "🛡️",
+        "title": "Fiabilité accrue et longévité maximisée",
+        "description": "Anticipez les problèmes, maintenez un suivi rigoureux et réduisez les risques de pannes inattendues pour garantir la fiabilité de votre véhicule sur le long terme."
       },
       {
-        "emoji": "🔐",
-        "title": "Valorisez votre voiture avec l'AUTYVO Trace",
-        "description": "Partagez un historique complet, sécurisé et professionnel : les acheteurs gagnent confiance, et vous vendez mieux."
+        "emoji": "📈",
+        "title": "Valorisez votre véhicule avec l'AUTYVO Trace",
+        "description": "Partagez un historique complet, sécurisé et professionnel de votre véhicule : les acheteurs gagnent confiance, et vous justifiez un meilleur prix de revente."
       }
     ]
   },

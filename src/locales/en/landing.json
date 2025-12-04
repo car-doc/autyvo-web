@@ -38,32 +38,32 @@
   },
   "benefits": {
     "title": "AUTYVO Benefits",
-    "subtitle": "A complete solution to manage, maintain and enhance your vehicle",
+    "subtitle": "The complete solution that simplifies management, facilitates maintenance, and maximizes your vehicle's value.",
     "items": [
       {
         "emoji": "🚗",
-        "title": "Simplify your vehicle management",
-        "description": "AUTYVO automatically centralizes all your documents, to end lost papers and oversights."
+        "title": "Zero paperwork, everything is centralized",
+        "description": "AUTYVO automatically centralizes all your vehicle documents (invoices, insurance, technical inspections, etc.), putting an end to lost papers and administrative oversights."
       },
       {
-        "emoji": "🔍",
-        "title": "Organize everything in seconds",
-        "description": "Scan your plate and documents: invoices, insurance, technical inspections... everything is classified and accessible."
+        "emoji": "⏱️",
+        "title": "Organize and classify in seconds",
+        "description": "Thanks to intelligent recognition, take a photo of your documents (invoices, insurance, technical inspections...): everything is instantly classified, archived and accessible on the app."
       },
       {
         "emoji": "🧠",
-        "title": "Smart planning",
-        "description": "Our intelligent engine creates an automatic maintenance plan and sends you reminders so you don't forget anything."
+        "title": "Planned and stress-free maintenance",
+        "description": "Our intelligent engine automatically creates a maintenance plan tailored to your vehicle and sends you precise reminders so you never miss a critical deadline."
       },
       {
-        "emoji": "🔧",
-        "title": "A more reliable and better maintained vehicle",
-        "description": "Anticipate breakdowns and maximize your vehicle's longevity through rigorous monitoring."
+        "emoji": "🛡️",
+        "title": "Enhanced reliability and maximized longevity",
+        "description": "Anticipate problems, maintain rigorous tracking and reduce the risk of unexpected breakdowns to ensure your vehicle's long-term reliability."
       },
       {
-        "emoji": "🔐",
-        "title": "Enhance your car with AUTYVO Trace",
-        "description": "Share a complete, secure and professional history: buyers gain confidence, and you sell better."
+        "emoji": "📈",
+        "title": "Enhance your vehicle with AUTYVO Trace",
+        "description": "Share a complete, secure and professional history of your vehicle: buyers gain confidence, and you justify a better resale price."
       }
     ]
   },
