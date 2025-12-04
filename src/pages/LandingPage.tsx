@@ -98,6 +98,43 @@ function LandingPage() {
           </button>
         )}
 
+        {/* Benefits Section */}
+        <section id="gestion-section" className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-4">
+              {t('benefits.title')}
+            </h2>
+            <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+              {t('benefits.subtitle')}
+            </p>
+
+            <div className="grid lg:grid-cols-[1fr_400px] gap-12 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {(t('benefits.items', { returnObjects: true }) as Array<{ emoji: string; title: string; description: string }>).map((benefit, index) => (
+                  <div
+                    key={index}
+                    className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow ${
+                      index === 4 ? 'md:col-span-2' : ''
+                    }`}
+                  >
+                    <div className="text-5xl mb-6">{benefit.emoji}</div>
+                    <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="hidden lg:block">
+                <img
+                  src={benefitsImage}
+                  alt="Interface de l'application AUTYVO"
+                  className="rounded-xl shadow-2xl w-full h-auto object-cover sticky top-24"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,43 +167,6 @@ function LandingPage() {
                   src={stickyImage}
                   alt="Interface de l'application AUTYVO"
                   className="rounded-xl shadow-2xl w-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Benefits Section */}
-        <section id="gestion-section" className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-4">
-              {t('benefits.title')}
-            </h2>
-            <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-              {t('benefits.subtitle')}
-            </p>
-
-            <div className="grid lg:grid-cols-[1fr_400px] gap-12 items-start">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {(t('benefits.items', { returnObjects: true }) as Array<{ emoji: string; title: string; description: string }>).map((benefit, index) => (
-                  <div
-                    key={index}
-                    className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow ${
-                      index === 4 ? 'md:col-span-2' : ''
-                    }`}
-                  >
-                    <div className="text-5xl mb-6">{benefit.emoji}</div>
-                    <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="hidden lg:block">
-                <img
-                  src={benefitsImage}
-                  alt="Interface de l'application AUTYVO"
-                  className="rounded-xl shadow-2xl w-full h-auto object-cover sticky top-24"
                 />
               </div>
             </div>
