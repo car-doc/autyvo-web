@@ -67,15 +67,14 @@
   "trace": {
     "title": "AUTYVO Trace",
     "subtitle": "Donnez à votre véhicule l'histoire qu'il mérite. Partagez-la avec fierté.",
-    "intro": "Votre voiture a une histoire. Chaque entretien, chaque facture, chaque contrôle… ce sont des preuves de soin, d'attention et de sérieux. Avec AUTYVO Trace, cette histoire devient enfin lisible, valorisée et incontestable.",
-    "description": "Ce rapport complet réunit tout : vos documents soigneusement organisés, mais aussi les données officielles du SIV, pour offrir un dossier transparent, digne d'un véhicule irréprochable.",
-    "benefitsTitle": "Quand vous partagez votre AUTYVO Trace, vous transmettez bien plus que des informations :",
-    "benefitsItems": [
-      "Vous montrez que vous avez pris soin de votre voiture.",
-      "Vous inspirez immédiatement confiance.",
-      "Vous donnez à votre véhicule la valeur qu'il mérite vraiment."
+    "intro": "L'historique d'entretien de votre voiture est une preuve de soin et de sérieux. Sans AUTYVO Trace, ce travail est invisible. Avec notre rapport, cette histoire devient lisible, valorisée et incontestable.",
+    "reportTitle": "Le Rapport de Confiance",
+    "reportDescription": "AUTYVO Trace est le dossier complet qui réunit :",
+    "reportItems": [
+      "Vos documents (factures, réparations) classés et organisés automatiquement.",
+      "Les données officielles du Ministère (SIV) pour une transparence totale."
     ],
-    "conclusion": "Et au moment de la vente, cet atout fait toute la différence : votre voiture se démarque, rassure et se vend plus vite — souvent mieux.",
+    "conclusion": "Quand vous partagez ce rapport sécurisé, vous transmettez la confiance, vous prouvez la qualité de l'entretien, et vous justifiez le prix le plus juste. Votre voiture se vend plus vite, et au meilleur prix.",
     "tagline": "AUTYVO Trace : parce qu'un véhicule bien entretenu mérite d'être reconnu.",
     "bonus": {
       "title": "Bonus Exclusif",

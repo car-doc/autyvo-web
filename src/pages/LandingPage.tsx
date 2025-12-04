@@ -278,32 +278,37 @@ function LandingPage() {
                   </div>
                 </div>
 
-                <div className="space-y-5 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
-                  <div className="bg-white p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100">
-                    <p className="text-gray-800">{t('trace.intro')}</p>
+                <div className="space-y-6 sm:space-y-8 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">{t('trace.intro')}</p>
                   </div>
 
-                  <p className="text-gray-700 px-2">{t('trace.description')}</p>
-
-                  <div className="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-200 shadow-md">
-                    <div className="flex items-center gap-2 mb-4 sm:mb-5">
-                      <div className="h-1 w-10 sm:w-12 bg-brand-primary rounded-full"></div>
-                      <p className="font-bold text-brand-secondary text-base sm:text-lg">{t('trace.benefitsTitle')}</p>
+                  <div className="bg-gradient-to-br from-brand-primary/5 via-white to-brand-secondary/5 p-6 sm:p-8 rounded-2xl border-2 border-brand-primary/20 shadow-xl">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-3 rounded-xl shadow-md">
+                        <FileCheck className="text-white" size={24} />
+                      </div>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-brand-secondary">
+                        {t('trace.reportTitle')}
+                      </h3>
                     </div>
-                    <ul className="space-y-3 sm:space-y-4">
-                      {(t('trace.benefitsItems', { returnObjects: true }) as string[]).map((item, index) => (
-                        <li key={index} className="flex items-start gap-3 group">
-                          <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary/20 transition-colors flex-shrink-0">
-                            <Star className="text-brand-primary" size={16} />
+                    <p className="text-gray-800 text-lg font-semibold mb-6">{t('trace.reportDescription')}</p>
+                    <ul className="space-y-4">
+                      {(t('trace.reportItems', { returnObjects: true }) as string[]).map((item, index) => (
+                        <li key={index} className="flex items-start gap-4 group">
+                          <div className="bg-gradient-to-br from-green-500 to-green-600 p-2.5 rounded-lg shadow-md flex-shrink-0 group-hover:scale-110 transition-transform">
+                            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
                           </div>
-                          <span className="text-gray-800 font-medium pt-1 text-sm sm:text-base">{item}</span>
+                          <span className="text-gray-800 font-medium pt-1.5 text-base sm:text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <div className="bg-white p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100">
-                    <p className="text-gray-800 font-medium">{t('trace.conclusion')}</p>
+                  <div className="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <p className="text-gray-800 text-lg sm:text-xl font-semibold leading-relaxed">{t('trace.conclusion')}</p>
                   </div>
                 </div>
               </div>

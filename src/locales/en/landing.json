@@ -67,15 +67,14 @@
   "trace": {
     "title": "AUTYVO Trace",
     "subtitle": "Give your vehicle the history it deserves. Share it with pride.",
-    "intro": "Your car has a history. Every service, every invoice, every check... these are proofs of care, attention and seriousness. With AUTYVO Trace, this history finally becomes readable, valued and indisputable.",
-    "description": "This complete report brings together everything: your carefully organized documents, but also official SIV data, to offer a transparent file worthy of an impeccable vehicle.",
-    "benefitsTitle": "When you share your AUTYVO Trace, you transmit much more than information:",
-    "benefitsItems": [
-      "You show that you have taken care of your car.",
-      "You immediately inspire confidence.",
-      "You give your vehicle the value it truly deserves."
+    "intro": "Your car's maintenance history is proof of care and diligence. Without AUTYVO Trace, this work is invisible. With our report, this history becomes readable, valued, and indisputable.",
+    "reportTitle": "The Trust Report",
+    "reportDescription": "AUTYVO Trace is the complete file that brings together:",
+    "reportItems": [
+      "Your documents (invoices, repairs) classified and organized automatically.",
+      "Official Ministry data (SIV) for total transparency."
     ],
-    "conclusion": "And at the time of sale, this asset makes all the difference: your car stands out, reassures and sells faster — often better.",
+    "conclusion": "When you share this secure report, you transmit trust, you prove the quality of maintenance, and you justify the fairest price. Your car sells faster and at the best price.",
     "tagline": "AUTYVO Trace: because a well-maintained vehicle deserves to be recognized.",
     "bonus": {
       "title": "Exclusive Bonus",
