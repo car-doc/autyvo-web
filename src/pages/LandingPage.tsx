@@ -15,6 +15,7 @@ import {
   Gift,
   ArrowRight,
   Star,
+  Sparkle,
 } from 'lucide-react';
 
 import heroImage from '@/assets/images/illustrations/transaction.jpeg';
@@ -251,63 +252,106 @@ function LandingPage() {
         </section>
 
         {/* AUTYVO Trace Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-[1fr_400px] gap-12 items-center">
-              <div>
-                <div className="flex items-center mb-6">
-                  <Shield className="text-brand-primary mr-4" size={56} />
-                  <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary">{t('trace.title')}</h2>
+        <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.03),transparent_50%)]"></div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="grid lg:grid-cols-[1fr_440px] gap-12 lg:gap-16 items-start">
+              <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-full text-brand-primary text-sm font-semibold mb-2">
+                  <Sparkle size={16} />
+                  Fonctionnalité Phare
                 </div>
-                <p className="text-2xl font-semibold text-brand-primary mb-8">
-                  {t('trace.subtitle')}
-                </p>
 
-                <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
-                  <p>{t('trace.intro')}</p>
-                  <p>{t('trace.description')}</p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-2.5 sm:p-3 rounded-xl sm:rounded-2xl shadow-lg flex-shrink-0">
+                      <Shield className="text-white" size={32} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-secondary mb-2 sm:mb-3 leading-tight">
+                        {t('trace.title')}
+                      </h2>
+                      <p className="text-lg sm:text-xl md:text-2xl font-semibold text-brand-primary">
+                        {t('trace.subtitle')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                  <div className="bg-gray-50 p-6 rounded-xl">
-                    <p className="font-semibold text-brand-secondary mb-3">{t('trace.benefitsTitle')}</p>
-                    <ul className="space-y-2">
+                <div className="space-y-5 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="bg-white p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100">
+                    <p className="text-gray-800">{t('trace.intro')}</p>
+                  </div>
+
+                  <p className="text-gray-700 px-2">{t('trace.description')}</p>
+
+                  <div className="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-200 shadow-md">
+                    <div className="flex items-center gap-2 mb-4 sm:mb-5">
+                      <div className="h-1 w-10 sm:w-12 bg-brand-primary rounded-full"></div>
+                      <p className="font-bold text-brand-secondary text-base sm:text-lg">{t('trace.benefitsTitle')}</p>
+                    </div>
+                    <ul className="space-y-3 sm:space-y-4">
                       {(t('trace.benefitsItems', { returnObjects: true }) as string[]).map((item, index) => (
-                        <li key={index} className="flex items-start">
-                          <Star className="text-brand-primary mr-2 mt-1 flex-shrink-0" size={20} />
-                          <span>{item}</span>
+                        <li key={index} className="flex items-start gap-3 group">
+                          <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary/20 transition-colors flex-shrink-0">
+                            <Star className="text-brand-primary" size={16} />
+                          </div>
+                          <span className="text-gray-800 font-medium pt-1 text-sm sm:text-base">{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <p>{t('trace.conclusion')}</p>
+                  <div className="bg-white p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100">
+                    <p className="text-gray-800 font-medium">{t('trace.conclusion')}</p>
+                  </div>
 
-                  <p className="text-xl font-semibold text-brand-secondary pt-4">
-                    {t('trace.tagline')}
-                  </p>
-
-                  <div className="bg-gradient-to-r from-brand-primary to-brand-primary-dark p-6 rounded-xl mt-8 text-white">
-                    <p className="text-2xl font-bold mb-4 flex items-center">
-                      <Gift className="mr-3" size={32} />
-                      {t('trace.bonus.title')}
+                  <div className="bg-gradient-to-r from-brand-secondary/5 to-brand-primary/5 p-5 sm:p-6 rounded-xl sm:rounded-2xl border-l-4 border-brand-primary">
+                    <p className="text-lg sm:text-xl font-bold text-brand-secondary italic">
+                      {t('trace.tagline')}
                     </p>
-                    <p className="text-lg mb-6">{t('trace.bonus.description')}</p>
-                    <button
-                      onClick={scrollToDownload}
-                      className="bg-white text-brand-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2"
-                    >
-                      {t('trace.bonus.cta')}
-                      <ArrowRight size={20} />
-                    </button>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-secondary p-6 sm:p-8 rounded-2xl shadow-2xl border border-brand-primary/20 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+                    <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+                    <div className="relative">
+                      <div className="flex items-center gap-2 sm:gap-3 mb-4">
+                        <div className="bg-white/20 p-2 sm:p-3 rounded-lg sm:rounded-xl backdrop-blur-sm flex-shrink-0">
+                          <Gift className="text-white" size={24} />
+                        </div>
+                        <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+                          {t('trace.bonus.title')}
+                        </p>
+                      </div>
+                      <p className="text-base sm:text-lg text-white/95 mb-6 leading-relaxed">{t('trace.bonus.description')}</p>
+                      <button
+                        onClick={scrollToDownload}
+                        className="bg-white text-brand-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-gray-50 transition-all transform hover:scale-105 hover:shadow-2xl shadow-xl inline-flex items-center gap-2 sm:gap-3 group w-full sm:w-auto justify-center"
+                      >
+                        <span className="truncate">{t('trace.bonus.cta')}</span>
+                        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="hidden lg:block">
-                <img
-                  src={traceImage}
-                  alt="Exemple d'AUTYVO Trace"
-                  className="rounded-xl shadow-2xl w-full h-auto object-cover sticky top-24"
-                />
+              <div className="lg:sticky lg:top-24 order-1 lg:order-2">
+                <div className="relative max-w-md mx-auto lg:max-w-none">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-3xl blur-2xl"></div>
+                  <div className="relative bg-white p-4 rounded-2xl shadow-2xl border border-gray-200">
+                    <img
+                      src={traceImage}
+                      alt="Exemple d'AUTYVO Trace"
+                      className="rounded-xl w-full h-auto object-cover"
+                    />
+                    <div className="absolute -bottom-4 -right-4 bg-brand-primary text-white px-4 py-2 lg:px-6 lg:py-3 rounded-xl shadow-xl font-bold text-xs lg:text-sm flex items-center gap-2">
+                      <FileCheck size={18} className="lg:w-5 lg:h-5" />
+                      Rapport Complet
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
