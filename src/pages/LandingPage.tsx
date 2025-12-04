@@ -12,6 +12,9 @@ import {
   TrendingUp,
   Scan,
   ArrowRightLeft,
+  Gift,
+  ArrowRight,
+  Star,
 } from 'lucide-react';
 
 import heroImage from '@/assets/images/illustrations/transaction.jpeg';
@@ -253,7 +256,7 @@ function LandingPage() {
             <div className="grid lg:grid-cols-[1fr_400px] gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
-                  <div className="text-5xl mr-4">{t('trace.emoji')}</div>
+                  <Shield className="text-brand-primary mr-4" size={56} />
                   <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary">{t('trace.title')}</h2>
                 </div>
                 <p className="text-2xl font-semibold text-brand-primary mb-8">
@@ -269,7 +272,7 @@ function LandingPage() {
                     <ul className="space-y-2">
                       {(t('trace.benefitsItems', { returnObjects: true }) as string[]).map((item, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="text-brand-primary mr-2 mt-1">✨</span>
+                          <Star className="text-brand-primary mr-2 mt-1 flex-shrink-0" size={20} />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -284,19 +287,17 @@ function LandingPage() {
 
                   <div className="bg-gradient-to-r from-brand-primary to-brand-primary-dark p-6 rounded-xl mt-8 text-white">
                     <p className="text-2xl font-bold mb-4 flex items-center">
-                      <span className="text-3xl mr-3">{t('trace.bonus.emoji')}</span>
+                      <Gift className="mr-3" size={32} />
                       {t('trace.bonus.title')}
                     </p>
                     <p className="text-lg mb-6">{t('trace.bonus.description')}</p>
-                    <div className="flex items-center">
-                      <span className="text-2xl mr-3">{t('trace.bonus.emoji2')}</span>
-                      <button
-                        onClick={scrollToDownload}
-                        className="bg-white text-brand-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
-                      >
-                        {t('trace.bonus.cta')}
-                      </button>
-                    </div>
+                    <button
+                      onClick={scrollToDownload}
+                      className="bg-white text-brand-secondary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2"
+                    >
+                      {t('trace.bonus.cta')}
+                      <ArrowRight size={20} />
+                    </button>
                   </div>
                 </div>
               </div>

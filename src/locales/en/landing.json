@@ -66,7 +66,6 @@
   },
   "trace": {
     "title": "AUTYVO Trace",
-    "emoji": "🔐",
     "subtitle": "Give your vehicle the history it deserves. Share it with pride.",
     "intro": "Your car has a history. Every service, every invoice, every check... these are proofs of care, attention and seriousness. With AUTYVO Trace, this history finally becomes readable, valued and indisputable.",
     "description": "This complete report brings together everything: your carefully organized documents, but also official SIV data, to offer a transparent file worthy of an impeccable vehicle.",
@@ -80,10 +79,8 @@
     "tagline": "AUTYVO Trace: because a well-maintained vehicle deserves to be recognized.",
     "bonus": {
       "title": "Exclusive Bonus",
-      "emoji": "🎁",
       "description": "Download the app today and generate your first AUTYVO Trace report for free!",
-      "cta": "Download AUTYVO App",
-      "emoji2": "👉"
+      "cta": "Download AUTYVO App"
     }
   },
   "verification": {
