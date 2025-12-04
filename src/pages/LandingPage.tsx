@@ -120,21 +120,21 @@ function LandingPage() {
               {t('benefits.subtitle')}
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
               {(t('benefits.items', { returnObjects: true }) as Array<{ image: string; title: string; description: string }>).map((benefit, index) => (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+                  className="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
                 >
-                  <div className="mb-6 flex justify-center">
+                  <div className="mb-8 flex justify-center">
                     <img
                       src={benefitImages[benefit.image]}
                       alt={benefit.title}
-                      className="w-32 h-32 object-contain"
+                      className="w-48 h-48 object-contain"
                     />
                   </div>
-                  <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                  <h3 className="text-2xl font-bold text-brand-secondary mb-5 text-center">{benefit.title}</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg text-center">{benefit.description}</p>
                 </div>
               ))}
             </div>
