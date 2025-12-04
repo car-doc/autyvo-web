@@ -231,7 +231,7 @@ function LandingPage() {
                 <img
                   src={stickyImage}
                   alt="Interface de l'application AUTYVO"
-                  className="rounded-xl shadow-2xl w-full object-cover"
+                  className="rounded-xl shadow-2xl w-full max-h-[500px] object-contain"
                 />
               </div>
             </div>
