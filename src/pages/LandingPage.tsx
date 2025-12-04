@@ -305,35 +305,6 @@ function LandingPage() {
                   <div className="bg-white p-5 sm:p-6 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100">
                     <p className="text-gray-800 font-medium">{t('trace.conclusion')}</p>
                   </div>
-
-                  <div className="bg-gradient-to-r from-brand-secondary/5 to-brand-primary/5 p-5 sm:p-6 rounded-xl sm:rounded-2xl border-l-4 border-brand-primary">
-                    <p className="text-lg sm:text-xl font-bold text-brand-secondary italic">
-                      {t('trace.tagline')}
-                    </p>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-secondary p-6 sm:p-8 rounded-2xl shadow-2xl border border-brand-primary/20 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
-                    <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
-                    <div className="relative">
-                      <div className="flex items-center gap-2 sm:gap-3 mb-4">
-                        <div className="bg-white/20 p-2 sm:p-3 rounded-lg sm:rounded-xl backdrop-blur-sm flex-shrink-0">
-                          <Gift className="text-white" size={24} />
-                        </div>
-                        <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
-                          {t('trace.bonus.title')}
-                        </p>
-                      </div>
-                      <p className="text-base sm:text-lg text-white/95 mb-6 leading-relaxed">{t('trace.bonus.description')}</p>
-                      <button
-                        onClick={scrollToDownload}
-                        className="bg-white text-brand-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-gray-50 transition-all transform hover:scale-105 hover:shadow-2xl shadow-xl inline-flex items-center gap-2 sm:gap-3 group w-full sm:w-auto justify-center"
-                      >
-                        <span className="truncate">{t('trace.bonus.cta')}</span>
-                        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -351,6 +322,40 @@ function LandingPage() {
                       Rapport Complet
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Full Width Bonus Section */}
+          <div className="mt-16 sm:mt-20 relative">
+            <div className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-secondary relative overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.1),transparent_70%)]"></div>
+              <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-48 -mt-48"></div>
+              <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full -ml-40 -mb-40"></div>
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative">
+                <div className="max-w-4xl mx-auto text-center">
+                  <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white/90 italic mb-6 sm:mb-8">
+                    {t('trace.tagline')}
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+                    <div className="bg-white/20 p-3 sm:p-4 rounded-2xl backdrop-blur-sm">
+                      <Gift className="text-white" size={32} />
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                      {t('trace.bonus.title')}
+                    </h3>
+                  </div>
+                  <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 sm:mb-10 leading-relaxed">
+                    {t('trace.bonus.description')}
+                  </p>
+                  <button
+                    onClick={scrollToDownload}
+                    className="bg-white text-brand-secondary px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-xl font-bold text-lg sm:text-xl hover:bg-gray-50 transition-all transform hover:scale-105 hover:shadow-2xl shadow-2xl inline-flex items-center gap-3 group mx-auto"
+                  >
+                    <span>{t('trace.bonus.cta')}</span>
+                    <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  </button>
                 </div>
               </div>
             </div>
