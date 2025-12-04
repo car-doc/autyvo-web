@@ -228,11 +228,11 @@ function LandingPage() {
               </div>
 
               <div className="hidden lg:block sticky top-24">
-                <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-gray-100">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] border border-gray-700">
                   <img
                     src={stickyImage}
                     alt="Interface de l'application AUTYVO"
-                    className="rounded-xl w-full max-h-[500px] object-contain shadow-lg"
+                    className="rounded-xl w-full max-h-[500px] object-contain shadow-2xl"
                   />
                 </div>
               </div>
