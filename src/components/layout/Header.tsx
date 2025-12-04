@@ -16,8 +16,12 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
 
-  const scrollToFeatures = () => {
-    scrollToElement('gestion-section', navigate, location.pathname);
+  const scrollToHome = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
     setIsMenuOpen(false);
   };
 
@@ -42,10 +46,10 @@ const Header: React.FC = () => {
           {/* Navigation Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
-              onClick={scrollToFeatures}
+              onClick={scrollToHome}
               className="text-brand-secondary hover:text-brand-primary transition-colors"
             >
-              {t('header.nav.features')}
+              {t('header.nav.home')}
             </button>
             <Link
               to="/pro"
@@ -80,10 +84,10 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t">
             <button
-              onClick={scrollToFeatures}
+              onClick={scrollToHome}
               className="block w-full text-left text-brand-secondary hover:text-brand-primary py-2"
             >
-              {t('header.nav.features')}
+              {t('header.nav.home')}
             </button>
             <button
               onClick={() => handleNavigation('/pro')}
