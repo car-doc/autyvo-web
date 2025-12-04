@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import ContactForm, { ContactFormData } from '../../components/forms/ContactForm';
 import { contactService } from '@/services/contactService';
-import clientTalkingImg from '../../assets/images/illustrations/client-talking-to-professional.png';
+import clientTalkingImg from '../../assets/images/illustrations/Mecano_client.jpeg';
 import professionalShowroomImg from '../../assets/images/illustrations/professional-in-showroom.jpg';
 import mechanicWorkingImg from '../../assets/images/illustrations/mechanic-at-work.jpg';
 import fleetManagerImg from '../../assets/images/illustrations/fleet-manager.jpg';
