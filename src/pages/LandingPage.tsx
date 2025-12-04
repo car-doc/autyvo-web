@@ -11,7 +11,6 @@ import {
 
 import heroImage from '@/assets/images/illustrations/transaction.jpeg';
 import stickyImage from '@/assets/images/app/dashboard-screen.jpeg';
-import benefitsImage from '@/assets/images/app/agenda-screen.jpg';
 import traceImage from '@/assets/images/report/report-cover-page.jpeg';
 import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
 import zeroPapierImg from '@/assets/images/app/zero_papier.png';
@@ -121,35 +120,23 @@ function LandingPage() {
               {t('benefits.subtitle')}
             </p>
 
-            <div className="grid lg:grid-cols-[1fr_400px] gap-12 items-start">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {(t('benefits.items', { returnObjects: true }) as Array<{ image: string; title: string; description: string }>).map((benefit, index) => (
-                  <div
-                    key={index}
-                    className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow ${
-                      index === 4 ? 'md:col-span-2' : ''
-                    }`}
-                  >
-                    <div className="mb-6">
-                      <img
-                        src={benefitImages[benefit.image]}
-                        alt={benefit.title}
-                        className="w-20 h-20 object-contain"
-                      />
-                    </div>
-                    <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {(t('benefits.items', { returnObjects: true }) as Array<{ image: string; title: string; description: string }>).map((benefit, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+                >
+                  <div className="mb-6 flex justify-center">
+                    <img
+                      src={benefitImages[benefit.image]}
+                      alt={benefit.title}
+                      className="w-32 h-32 object-contain"
+                    />
                   </div>
-                ))}
-              </div>
-
-              <div className="hidden lg:block">
-                <img
-                  src={benefitsImage}
-                  alt="Interface de l'application AUTYVO"
-                  className="rounded-xl shadow-2xl w-full h-auto object-cover sticky top-24"
-                />
-              </div>
+                  <h3 className="text-2xl font-bold text-brand-secondary mb-4">{benefit.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
