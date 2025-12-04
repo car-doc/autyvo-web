@@ -156,5 +156,10 @@
         "answer": "Absolutely. We comply with GDPR and your data is encrypted. You keep full control over what you share and with whom."
       }
     ]
+  },
+  "cta": {
+    "title": "Ready to enhance your vehicle's value?",
+    "subtitle": "Join thousands of drivers who trust AUTYVO",
+    "button": "Download for free"
   }
 }

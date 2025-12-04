@@ -156,5 +156,10 @@
         "answer": "Absolument. Nous respectons le RGPD et vos données sont chiffrées. Vous gardez le contrôle total sur ce que vous partagez et avec qui."
       }
     ]
+  },
+  "cta": {
+    "title": "Prêt à valoriser votre véhicule ?",
+    "subtitle": "Rejoignez des milliers d'automobilistes qui font confiance à AUTYVO",
+    "button": "Télécharger gratuitement"
   }
 }

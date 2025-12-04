@@ -404,6 +404,26 @@ function LandingPage() {
 
         {/* FAQ Section */}
         <FaqSection />
+
+        {/* CTA Section */}
+        <section className="py-20 bg-gradient-to-br from-brand-primary to-brand-primary-dark">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              {t('cta.title')}
+            </h2>
+            <p className="text-xl text-gray-100 mb-8">
+              {t('cta.subtitle')}
+            </p>
+            <a
+              href="#download"
+              onClick={handleDownload}
+              className="inline-flex items-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              <Download size={24} />
+              {t('cta.button')}
+            </a>
+          </div>
+        </section>
       </div>
     </>
   );
