@@ -106,6 +106,54 @@ function ProPage() {
           </div>
         </section>
 
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-16">
+              {t('pro.solutions.title')}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <img
+                  src={professionalShowroomImg}
+                  alt="Professionnelle dans un showroom"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
+                <h3 className="text-2xl font-bold text-brand-secondary mb-4">{t('pro.solutions.garage.title')}</h3>
+                <h4 className="text-lg font-semibold text-brand-primary mb-3">{t('pro.solutions.garage.subtitle')}</h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('pro.solutions.garage.description')}
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <img
+                  src={mechanicWorkingImg}
+                  alt="Mécanicien au travail"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
+                <h3 className="text-2xl font-bold text-brand-secondary mb-4">{t('pro.solutions.dealer.title')}</h3>
+                <h4 className="text-lg font-semibold text-brand-primary mb-3">{t('pro.solutions.dealer.subtitle')}</h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('pro.solutions.dealer.description')}
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <img
+                  src={fleetManagerImg}
+                  alt="Gestionnaire de flotte"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
+                <h3 className="text-2xl font-bold text-brand-secondary mb-4">{t('pro.solutions.fleet.title')}</h3>
+                <h4 className="text-lg font-semibold text-brand-primary mb-3">{t('pro.solutions.fleet.subtitle')}</h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('pro.solutions.fleet.description')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-16">
@@ -164,54 +212,6 @@ function ProPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-16">
-              {t('pro.solutions.title')}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <img
-                  src={professionalShowroomImg}
-                  alt="Professionnelle dans un showroom"
-                  className="w-full h-48 object-cover rounded-lg mb-6"
-                />
-                <h3 className="text-2xl font-bold text-brand-secondary mb-4">{t('pro.solutions.garage.title')}</h3>
-                <h4 className="text-lg font-semibold text-brand-primary mb-3">{t('pro.solutions.garage.subtitle')}</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  {t('pro.solutions.garage.description')}
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <img
-                  src={mechanicWorkingImg}
-                  alt="Mécanicien au travail"
-                  className="w-full h-48 object-cover rounded-lg mb-6"
-                />
-                <h3 className="text-2xl font-bold text-brand-secondary mb-4">{t('pro.solutions.dealer.title')}</h3>
-                <h4 className="text-lg font-semibold text-brand-primary mb-3">{t('pro.solutions.dealer.subtitle')}</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  {t('pro.solutions.dealer.description')}
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <img
-                  src={fleetManagerImg}
-                  alt="Gestionnaire de flotte"
-                  className="w-full h-48 object-cover rounded-lg mb-6"
-                />
-                <h3 className="text-2xl font-bold text-brand-secondary mb-4">{t('pro.solutions.fleet.title')}</h3>
-                <h4 className="text-lg font-semibold text-brand-primary mb-3">{t('pro.solutions.fleet.subtitle')}</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  {t('pro.solutions.fleet.description')}
-                </p>
               </div>
             </div>
           </div>
