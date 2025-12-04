@@ -11,6 +11,7 @@ import {
   Sparkles,
   TrendingUp,
   Scan,
+  ArrowRightLeft,
 } from 'lucide-react';
 
 import heroImage from '@/assets/images/illustrations/transaction.jpeg';
@@ -22,6 +23,7 @@ import scanneImg from '@/assets/images/app/Scanne.png';
 import entretienPlanifieImg from '@/assets/images/app/Entretien_planifie.png';
 import bouclierImg from '@/assets/images/app/Bouclier.png';
 import autyvoTraceImg from '@/assets/images/app/Autyvo_trace.png';
+import transfereImg from '@/assets/images/app/Transfere.png';
 import TrustSection from '@/components/sections/TrustSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import FaqSection from '@/components/sections/FaqSection';
@@ -37,6 +39,7 @@ function LandingPage() {
     'Entretien_planifie.png': entretienPlanifieImg,
     'Bouclier.png': bouclierImg,
     'Autyvo_trace.png': autyvoTraceImg,
+    'Transfere.png': transfereImg,
   };
 
   // Gestion du scroll au montage si hash dans l'URL
@@ -133,7 +136,7 @@ function LandingPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {(t('benefits.items', { returnObjects: true }) as Array<{ image: string; title: string; description: string }>).map((benefit, index) => {
-                const icons = [FileCheck, Scan, Sparkles, Shield, TrendingUp];
+                const icons = [FileCheck, Scan, Sparkles, Shield, TrendingUp, ArrowRightLeft];
                 const Icon = icons[index % icons.length];
 
                 return (
