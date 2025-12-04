@@ -192,9 +192,6 @@ function LandingPage() {
                   <Download className="w-6 h-6 group-hover:animate-bounce" />
                   <span>Télécharger AUTYVO Gratuitement</span>
                 </button>
-                <p className="mt-4 text-white/80 text-sm">
-                  ✓ 100% Gratuit  ✓ Sans engagement  ✓ Installation en 2 minutes
-                </p>
               </div>
             </div>
           </div>
