@@ -12,27 +12,19 @@
   },
   "howItWorks": {
     "title": "Comment ça marche ?",
-    "subtitle": "Cinq étapes simples pour gérer votre véhicule et valoriser son historique",
+    "subtitle": "3 étapes simples pour gérer votre véhicule et valoriser son historique.",
     "steps": [
       {
-        "title": "Ajoutez votre véhicule",
-        "description": "Saisissez simplement votre plaque d'immatriculation pour l'enregistrer."
+        "title": "Identification du véhicule",
+        "description": "L'ajout de votre plaque d'immatriculation déclenche l'enregistrement et l'activation immédiate du moteur de planification d'entretien."
       },
       {
-        "title": "Scannez vos documents",
-        "description": "Importez ou scannez facilement vos factures, contrôles techniques, assurances, dépenses de carburant, etc."
+        "title": "Saisie facilitée et archivage",
+        "description": "Photographiez ou téléchargez vos documents (factures, assurances...). L'application gère automatiquement leur classement, leur archivage, et la mise à jour de votre historique."
       },
       {
-        "title": "Planification intelligente",
-        "description": "Notre moteur analyse vos informations et génère automatiquement un plan de maintenance avec un agenda et des notifications pour vos échéances importantes."
-      },
-      {
-        "title": "Vos documents organisés",
-        "description": "Accédez en un clin d'œil à tous les documents liés à votre véhicule, classés et centralisés."
-      },
-      {
-        "title": "Partage simple et sécurisé",
-        "description": "Générez votre AUTYVO Trace et partagez l'historique complet de votre véhicule en toute sécurité."
+        "title": "Partage et continuité",
+        "description": "Partagez l'historique de votre véhicule via l'AUTYVO Trace pour rassurer les acheteurs, ou transférez tout le dossier au nouveau propriétaire en fin de transaction."
       }
     ]
   },

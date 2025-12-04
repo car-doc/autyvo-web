@@ -12,27 +12,19 @@
   },
   "howItWorks": {
     "title": "How Does It Work?",
-    "subtitle": "Five simple steps to manage your vehicle and enhance its history",
+    "subtitle": "3 simple steps to manage your vehicle and enhance its history.",
     "steps": [
       {
-        "title": "Add your vehicle",
-        "description": "Simply enter your license plate to register it."
+        "title": "Vehicle identification",
+        "description": "Adding your license plate triggers registration and immediate activation of the maintenance planning engine."
       },
       {
-        "title": "Scan your documents",
-        "description": "Easily import or scan your invoices, technical inspections, insurance, fuel expenses, etc."
+        "title": "Easy input and archiving",
+        "description": "Photograph or upload your documents (invoices, insurance...). The application automatically handles their classification, archiving, and updates your history."
       },
       {
-        "title": "Smart planning",
-        "description": "Our engine analyzes your information and automatically generates a maintenance plan with a calendar and notifications for your important deadlines."
-      },
-      {
-        "title": "Your documents organized",
-        "description": "Access all documents related to your vehicle at a glance, classified and centralized."
-      },
-      {
-        "title": "Simple and secure sharing",
-        "description": "Generate your AUTYVO Trace and share the complete history of your vehicle securely."
+        "title": "Sharing and continuity",
+        "description": "Share your vehicle's history via AUTYVO Trace to reassure buyers, or transfer the entire file to the new owner at the end of the transaction."
       }
     ]
   },
