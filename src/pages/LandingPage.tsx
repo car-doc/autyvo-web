@@ -414,14 +414,13 @@ function LandingPage() {
             <p className="text-xl text-gray-100 mb-8">
               {t('cta.subtitle')}
             </p>
-            <a
-              href="#download"
-              onClick={handleDownload}
+            <button
+              onClick={scrollToDownload}
               className="inline-flex items-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               <Download size={24} />
               {t('cta.button')}
-            </a>
+            </button>
           </div>
         </section>
       </div>
