@@ -20,7 +20,7 @@ import {
 
 import heroImage from '@/assets/images/illustrations/transaction.jpeg';
 import stickyImage from '@/assets/images/app/dashboard-screen.jpeg';
-import traceImage from '@/assets/images/report/report-cover-page.jpeg';
+import traceImage from '@/assets/images/report/report-cover-page.png';
 import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
 import zeroPapierImg from '@/assets/images/app/zero_papier.png';
 import scanneImg from '@/assets/images/app/Scanne.png';
