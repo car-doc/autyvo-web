@@ -185,6 +185,12 @@
       "back": "Back"
     }
   },
+  "download": {
+    "title": "Download AUTYVO for Free",
+    "subtitle": "Available on iOS and Android. Start tracking your vehicle's history today.",
+    "ctaTitle": "Ready to Add Value to Your Vehicle?",
+    "ctaSubtitle": "Download the app and create your first AUTYVO Trace for free"
+  },
   "footer": {
     "about": {
       "title": "AUTYVO",

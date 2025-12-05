@@ -3,13 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { FileCheck, Gift, ArrowRight, Shield, CheckCircle2, TrendingUp } from 'lucide-react';
 import traceImage from '@/assets/images/report/report-cover-page.png';
 import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
+import DownloadCTA from '@/components/ui/DownloadCTA';
 
 interface TraceSectionProps {
   onBack: () => void;
 }
 
 function TraceSection({ onBack }: TraceSectionProps) {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation(['landing', 'common']);
 
   const scrollToDownload = () => {
     const element = document.getElementById('download');
@@ -151,6 +152,17 @@ function TraceSection({ onBack }: TraceSectionProps) {
           </div>
         </section>
 
+        {/* CTA Compact Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <DownloadCTA
+              variant="compact"
+              title={t('common:download.title')}
+              subtitle={t('common:download.subtitle')}
+            />
+          </div>
+        </section>
+
         {/* Verification Section */}
         <section className="relative py-28 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-primary to-transparent"></div>
@@ -224,6 +236,13 @@ function TraceSection({ onBack }: TraceSectionProps) {
             </div>
           </div>
         </section>
+
+        {/* Final CTA Hero Section */}
+        <DownloadCTA
+          variant="hero"
+          title={t('common:download.ctaTitle')}
+          subtitle={t('common:download.ctaSubtitle')}
+        />
       </div>
     </>
   );

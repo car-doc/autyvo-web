@@ -185,6 +185,12 @@
       "back": "Retour"
     }
   },
+  "download": {
+    "title": "Téléchargez AUTYVO Gratuitement",
+    "subtitle": "Disponible sur iOS et Android. Commencez à tracer l'historique de votre véhicule dès aujourd'hui.",
+    "ctaTitle": "Prêt à Valoriser Votre Véhicule ?",
+    "ctaSubtitle": "Téléchargez l'application et créez votre premier AUTYVO Trace gratuitement"
+  },
   "footer": {
     "about": {
       "title": "AUTYVO",
