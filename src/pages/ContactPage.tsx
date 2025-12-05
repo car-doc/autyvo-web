@@ -5,6 +5,9 @@ import { Mail, MapPin, MessageSquare, HelpCircle, Wrench, CheckCircle, AlertCirc
 import { CONTACT_EMAIL, SUPPORT_EMAIL, LEGAL_ENTITY } from '@/constants';
 import ContactForm, { ContactFormData } from '../components/forms/ContactForm';
 import { contactService } from '@/services/contactService';
+import Section, { SectionHeader } from '@/components/ui/Section';
+import Card from '@/components/ui/Card';
+import Button from '@/components/ui/Button';
 
 const ContactPage: React.FC = () => {
   const { t } = useTranslation('common');
@@ -44,54 +47,65 @@ const ContactPage: React.FC = () => {
         <meta name="description" content={t('contact.meta.description')} />
       </Helmet>
 
-      <div className="pt-16">
+      <div className="pt-20">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-brand-secondary to-brand-secondary-dark text-white py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {t('contact.hero.title')}
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              {t('contact.hero.subtitle')}
-            </p>
+        <Section background="gradient" className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(2,177,151,0.15),transparent_70%)]"></div>
+          <div className="relative z-10 text-center">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+              <MessageSquare className="w-5 h-5 text-brand-primary" />
+              <span className="text-sm font-medium text-white">Nous sommes à votre écoute</span>
+            </div>
+            <SectionHeader
+              title={t('contact.hero.title')}
+              subtitle={t('contact.hero.subtitle')}
+              light
+            />
           </div>
-        </section>
+        </Section>
 
         {/* Content Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-3 gap-12">
-              {/* Formulaire */}
-              <div className="lg:col-span-2">
-                <h2 className="text-3xl font-bold text-brand-secondary mb-8">
-                  {t('contact.form.title')}
-                </h2>
+        <Section background="white">
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Formulaire */}
+            <div className="lg:col-span-2">
+              <h2 className="text-3xl font-bold text-brand-secondary mb-8">
+                {t('contact.form.title')}
+              </h2>
 
-                {/* Success Message */}
-                {submitStatus === 'success' && (
-                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start">
-                    <CheckCircle className="text-green-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
-                    <div>
-                      <h3 className="font-semibold text-green-800 mb-1">Message envoyé avec succès !</h3>
-                      <p className="text-sm text-green-700">
+              {/* Success Message */}
+              {submitStatus === 'success' && (
+                <Card variant="outlined" className="mb-6 border-green-200 bg-green-50 animate-fade-in">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 bg-green-100 rounded-lg">
+                      <CheckCircle className="text-green-600" size={24} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-green-800 mb-2 text-lg">Message envoyé avec succès !</h3>
+                      <p className="text-green-700">
                         Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.
                       </p>
                     </div>
                   </div>
-                )}
+                </Card>
+              )}
 
-                {/* Error Message */}
-                {submitStatus === 'error' && (
-                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start">
-                    <AlertCircle className="text-red-600 mr-3 flex-shrink-0 mt-0.5" size={20} />
-                    <div>
-                      <h3 className="font-semibold text-red-800 mb-1">Erreur lors de l'envoi</h3>
-                    <p className="text-sm text-red-700">
-                      {errorMessage}
-                    </p>
+              {/* Error Message */}
+              {submitStatus === 'error' && (
+                <Card variant="outlined" className="mb-6 border-red-200 bg-red-50 animate-fade-in">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 bg-red-100 rounded-lg">
+                      <AlertCircle className="text-red-600" size={24} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-red-800 mb-2 text-lg">Erreur lors de l'envoi</h3>
+                      <p className="text-red-700">
+                        {errorMessage}
+                      </p>
                     </div>
                   </div>
-                )}
+                </Card>
+              )}
 
                 <ContactForm
                   variant="contact"
@@ -135,102 +149,125 @@ const ContactPage: React.FC = () => {
               {/* Sidebar */}
               <div className="space-y-8">
                 {/* Support Technique */}
-                <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-6 rounded-xl text-white">
-                  <h3 className="text-xl font-bold mb-4 flex items-center">
-                    <Wrench className="mr-2" size={24} />
+                <Card variant="gradient" className="bg-gradient-to-br from-brand-primary to-brand-primary-dark text-white border-none">
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                    <div className="p-2 bg-white/20 rounded-lg">
+                      <Wrench size={24} />
+                    </div>
                     {t('contact.support.title')}
                   </h3>
-                  <p className="mb-4 text-sm">
+                  <p className="mb-6 leading-relaxed">
                     {t('contact.support.description')}
                   </p>
-                  <div className="flex items-start">
-                    <Mail className="mr-3 mt-1 flex-shrink-0" size={20} />
+                  <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <Mail className="mt-1 flex-shrink-0" size={20} />
                     <div>
-                      <p className="font-semibold text-sm">{t('contact.support.email')}</p>
-                      <a href={`mailto:${SUPPORT_EMAIL}`} className="text-white hover:text-gray-200 transition-colors underline">
+                      <p className="font-semibold mb-1">{t('contact.support.email')}</p>
+                      <a
+                        href={`mailto:${SUPPORT_EMAIL}`}
+                        className="text-white hover:text-brand-accent transition-colors underline font-medium"
+                      >
                         {SUPPORT_EMAIL}
                       </a>
                     </div>
                   </div>
-                  <div className="mt-4 pt-4 border-t border-white/20">
-                    <p className="text-sm">
+                  <div className="mt-6 pt-6 border-t border-white/20">
+                    <p className="text-sm text-white/90">
                       {t('contact.support.hours')}
                     </p>
                   </div>
-                </div>
+                </Card>
 
                 {/* Contact Général */}
-                <div className="bg-white border-2 border-brand-secondary p-6 rounded-xl">
-                  <h3 className="text-xl font-bold text-brand-secondary mb-4 flex items-center">
-                    <MessageSquare className="mr-2 text-brand-secondary" size={24} />
+                <Card variant="outlined" className="border-2 border-brand-secondary hover:border-brand-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-brand-secondary mb-4 flex items-center gap-2">
+                    <div className="p-2 bg-brand-primary/10 rounded-lg">
+                      <MessageSquare className="text-brand-primary" size={24} />
+                    </div>
                     {t('contact.general.title')}
                   </h3>
-                  <p className="mb-4 text-sm text-gray-600">
+                  <p className="mb-6 text-gray-600 leading-relaxed">
                     {t('contact.general.description')}
                   </p>
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <Mail className="mr-3 mt-1 flex-shrink-0 text-brand-secondary" size={20} />
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 bg-brand-primary/10 rounded-lg">
+                        <Mail className="text-brand-primary" size={20} />
+                      </div>
                       <div>
-                        <p className="font-semibold text-brand-secondary text-sm">{t('contact.general.email')}</p>
-                        <a href={`mailto:${CONTACT_EMAIL}`} className="text-gray-600 hover:text-brand-primary transition-colors">
+                        <p className="font-semibold text-brand-secondary mb-1">{t('contact.general.email')}</p>
+                        <a
+                          href={`mailto:${CONTACT_EMAIL}`}
+                          className="text-gray-600 hover:text-brand-primary transition-colors font-medium"
+                        >
                           {CONTACT_EMAIL}
                         </a>
                       </div>
                     </div>
 
-                    <div className="flex items-start">
-                      <MapPin className="mr-3 mt-1 flex-shrink-0 text-brand-secondary" size={20} />
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 bg-brand-primary/10 rounded-lg">
+                        <MapPin className="text-brand-primary" size={20} />
+                      </div>
                       <div>
-                        <p className="font-semibold text-brand-secondary text-sm">{t('contact.general.address')}</p>
-                        <p className="text-gray-600">
+                        <p className="font-semibold text-brand-secondary mb-1">{t('contact.general.address')}</p>
+                        <p className="text-gray-600 leading-relaxed">
                           {LEGAL_ENTITY.address.street}<br />
                           {LEGAL_ENTITY.address.postalCode} {LEGAL_ENTITY.address.city}
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Card>
 
                 {/* Besoin d'aide */}
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h4 className="font-bold text-brand-secondary mb-4 flex items-center">
-                    <HelpCircle className="mr-2 text-brand-primary" size={24} />
+                <Card variant="default" className="bg-gradient-to-br from-gray-50 to-white">
+                  <h4 className="font-bold text-brand-secondary mb-4 flex items-center gap-2">
+                    <div className="p-2 bg-brand-primary/10 rounded-lg">
+                      <HelpCircle className="text-brand-primary" size={24} />
+                    </div>
                     {t('contact.help.title')}
                   </h4>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-600 mb-6 leading-relaxed">
                     {t('contact.help.description')}
                   </p>
-                  <button className="w-full px-4 py-2 bg-brand-secondary text-white rounded-lg hover:bg-brand-secondary-dark transition-colors flex items-center justify-center">
-                    <MessageSquare className="mr-2" size={18} />
+                  <Button
+                    variant="secondary"
+                    className="w-full"
+                    leftIcon={<MessageSquare size={18} />}
+                  >
                     {t('contact.help.cta')}
-                  </button>
-                </div>
+                  </Button>
+                </Card>
               </div>
             </div>
-          </div>
-        </section>
+        </Section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-brand-secondary text-center mb-12">
-              {t('contact.faq.title')}
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {faqItems.map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-md">
-                  <h3 className="font-bold text-brand-secondary mb-3">
-                    {item.question}
-                  </h3>
-                  <p className="text-gray-600">
-                    {item.answer}
-                  </p>
+        <Section background="gray">
+          <SectionHeader
+            title={t('contact.faq.title')}
+          />
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {faqItems.map((item, index) => (
+              <Card key={index} variant="default" hover className="group">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 bg-brand-primary/10 rounded-lg group-hover:bg-brand-primary/20 transition-colors duration-300">
+                    <HelpCircle className="text-brand-primary" size={20} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-brand-secondary mb-3 group-hover:text-brand-primary transition-colors">
+                      {item.question}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {item.answer}
+                    </p>
+                  </div>
                 </div>
-              ))}
-            </div>
+              </Card>
+            ))}
           </div>
-        </section>
+        </Section>
       </div>
     </>
   );

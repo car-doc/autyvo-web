@@ -16,25 +16,33 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer id="download" className="bg-brand-secondary text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+    <footer id="download" className="bg-gradient-to-br from-brand-secondary via-brand-secondary-dark to-brand-secondary text-white py-16 relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Section À propos */}
-          <div>
-            <h3 className="text-lg font-bold mb-3">{t('footer.about.title')}</h3>
-            <p className="text-gray-300 text-sm">
+          <div className="space-y-4">
+            <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              {t('footer.about.title')}
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
               {t('footer.about.description')}
             </p>
           </div>
 
           {/* Section Liens Utiles */}
-          <div>
-            <h4 className="font-semibold mb-3">{t('footer.links.title')}</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="space-y-4">
+            <h4 className="text-xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              {t('footer.links.title')}
+            </h4>
+            <ul className="space-y-3">
               <li>
                 <button
                   onClick={scrollToFaq}
-                  className="text-gray-300 hover:text-brand-primary transition-colors"
+                  className="text-gray-300 hover:text-brand-primary transition-all duration-300 hover:translate-x-2 inline-block font-medium"
                 >
                   {t('footer.links.faq')}
                 </button>
@@ -42,7 +50,7 @@ const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-300 hover:text-brand-primary transition-colors"
+                  className="text-gray-300 hover:text-brand-primary transition-all duration-300 hover:translate-x-2 inline-block font-medium"
                 >
                   {t('footer.links.contact')}
                 </Link>
@@ -51,31 +59,37 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Section Télécharger */}
-          <div>
-            <h4 className="font-semibold mb-3">{t('footer.download.title')}</h4>
-            <div className="flex flex-col space-y-2">
+          <div className="space-y-4">
+            <h4 className="text-xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              {t('footer.download.title')}
+            </h4>
+            <div className="flex flex-col space-y-4">
               <a
                 href={STORE_LINKS.googlePlay}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
+                className="group relative overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 w-fit"
               >
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <img
                   src={googlePlayImg}
                   alt={t('footer.download.googlePlay')}
-                  className="h-10"
+                  className="h-12 relative z-10"
+                  loading="lazy"
                 />
               </a>
               <a
                 href={STORE_LINKS.appStore}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
+                className="group relative overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 w-fit"
               >
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <img
                   src={appStoreImg}
                   alt={t('footer.download.appStore')}
-                  className="h-10"
+                  className="h-12 relative z-10"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -83,23 +97,25 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Section Légale et Copyright */}
-        <div className="border-t border-gray-700 pt-6">
+        <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-300">
+            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
               <Link
                 to="/legal/privacy"
-                className="hover:text-brand-primary transition-colors"
+                className="text-gray-300 hover:text-brand-primary transition-all duration-300 font-medium relative group"
               >
                 {t('footer.legal.privacy')}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
                 to="/legal/terms"
-                className="hover:text-brand-primary transition-colors"
+                className="text-gray-300 hover:text-brand-primary transition-all duration-300 font-medium relative group"
               >
                 {t('footer.legal.terms')}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </div>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-gray-300 font-medium">
               {t('footer.copyright', { year: currentYear })}
             </p>
           </div>
