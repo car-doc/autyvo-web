@@ -256,16 +256,11 @@ function LandingPage() {
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-3 bg-brand-primary/10 px-6 py-3 rounded-full mb-6">
-                <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-2 rounded-lg">
-                  <Shield className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-brand-primary font-bold text-base uppercase tracking-wide">
-                  {t('trace.title')}
-                </span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-brand-secondary mb-6">
-                {t('trace.subtitle')}
+              <h1 className="text-5xl md:text-6xl font-bold text-brand-secondary mb-6">
+                AUTYVO Trace
+              </h1>
+              <h2 className="text-2xl md:text-3xl text-gray-700 font-medium">
+                Parce qu'un véhicule bien entretenu mérite d'être reconnu.
               </h2>
             </div>
 
