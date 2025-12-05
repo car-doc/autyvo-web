@@ -234,6 +234,9 @@ function LandingPage() {
           </div>
         </section>
 
+        {/* Trust Section */}
+        <TrustSection />
+
         {/* Security Section */}
         <section className="py-16 bg-gradient-to-br from-brand-secondary to-brand-secondary-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -282,9 +285,6 @@ function LandingPage() {
             </div>
           </div>
         </section>
-
-        {/* Trust Section */}
-        <TrustSection />
 
         {/* Testimonials Section */}
         <TestimonialsSection />
