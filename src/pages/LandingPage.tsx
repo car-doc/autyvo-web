@@ -267,7 +267,8 @@ function LandingPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
               <div className="space-y-6">
                 <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
-                  <p className="text-gray-800 text-lg leading-relaxed">{t('trace.intro')}</p>
+                  <p className="text-gray-800 text-lg leading-relaxed mb-4">{t('trace.intro')}</p>
+                  <p className="text-brand-secondary text-base font-semibold italic">{t('trace.tagline')}</p>
                 </div>
 
                 <div className="bg-gradient-to-br from-brand-primary/5 via-white to-brand-secondary/5 p-8 rounded-2xl border-2 border-brand-primary/20 shadow-xl hover:shadow-2xl transition-shadow">
@@ -276,14 +277,36 @@ function LandingPage() {
                       <FileCheck className="text-white" size={24} />
                     </div>
                     <h3 className="text-2xl font-bold text-brand-secondary">
-                      {t('trace.reportTitle')}
+                      {t('trace.overviewTitle')}
                     </h3>
                   </div>
-                  <p className="text-gray-800 text-base font-semibold mb-6">{t('trace.reportDescription')}</p>
                   <ul className="space-y-3">
-                    {(t('trace.reportItems', { returnObjects: true }) as string[]).map((item, index) => (
+                    {(t('trace.overviewItems', { returnObjects: true }) as string[]).map((item, index) => (
                       <li key={index} className="flex items-start gap-3 group">
                         <div className="bg-gradient-to-br from-green-500 to-green-600 p-2 rounded-lg shadow-md flex-shrink-0 group-hover:scale-110 transition-transform">
+                          <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <span className="text-gray-800 font-medium pt-0.5 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-gradient-to-br from-brand-secondary to-brand-primary-dark p-3 rounded-xl shadow-md">
+                      <FileCheck className="text-white" size={24} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-brand-secondary">
+                      {t('trace.whyShareTitle')}
+                    </h3>
+                  </div>
+                  <ul className="space-y-4">
+                    {(t('trace.whyShareItems', { returnObjects: true }) as string[]).map((item, index) => (
+                      <li key={index} className="flex items-start gap-3 group">
+                        <div className="bg-gradient-to-br from-brand-primary to-brand-secondary p-2 rounded-lg shadow-md flex-shrink-0 group-hover:scale-110 transition-transform">
                           <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
@@ -292,10 +315,6 @@ function LandingPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
-                  <p className="text-gray-800 text-lg font-semibold leading-relaxed">{t('trace.conclusion')}</p>
                 </div>
               </div>
 

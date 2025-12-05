@@ -66,15 +66,25 @@
   },
   "trace": {
     "title": "AUTYVO Trace",
-    "subtitle": "Give your vehicle the history it deserves. Share it with pride.",
-    "intro": "Your car's maintenance history is proof of care and diligence. Without AUTYVO Trace, this work is invisible. With our report, this history becomes readable, valued, and indisputable.",
-    "reportTitle": "The Trust Report",
-    "reportDescription": "AUTYVO Trace is the complete file that brings together:",
-    "reportItems": [
-      "Your documents (invoices, repairs) classified and organized automatically.",
-      "Official Ministry data (SIV) for total transparency."
+    "intro": "Your vehicle's maintenance is a guarantee of trust. Without AUTYVO Trace, it remains invisible. With our document, it becomes transparent, verifiable, and valued.",
+    "tagline": "Because a buyer deserves to know and careful maintenance deserves to be recognized.",
+    "overviewTitle": "AUTYVO Trace at a glance",
+    "overviewItems": [
+      "Technical info: version, engine, equipment.",
+      "Environment: CO₂ emissions.",
+      "Official Ministry data: clear administrative traceability.",
+      "Technical inspection: dates, results, and points to monitor.",
+      "Complete maintenance history: regular and major operations.",
+      "Maintenance schedule: upcoming deadlines and reminders.",
+      "Safety and warranties: official tests and remaining warranties.",
+      "Simplified analysis: vehicle condition and vigilance points."
     ],
-    "conclusion": "When you share this secure report, you transmit trust, you prove the quality of maintenance, and you justify the fairest price. Your car sells faster and at the best price.",
+    "whyShareTitle": "Why share AUTYVO Trace",
+    "whyShareItems": [
+      "A unique and structured document, not just scattered invoices.",
+      "Reassures the buyer about maintenance, mileage, safety, and administrative status.",
+      "Values the maintenance performed and provides complete confidence in the vehicle's condition."
+    ],
     "bonus": {
       "title": "Exclusive Bonus",
       "description": "Download the app today and generate your first AUTYVO Trace report for free!",

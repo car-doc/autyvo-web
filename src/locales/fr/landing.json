@@ -66,15 +66,25 @@
   },
   "trace": {
     "title": "AUTYVO Trace",
-    "subtitle": "Donnez à votre véhicule l'histoire qu'il mérite. Partagez-la avec fierté.",
-    "intro": "L'historique d'entretien de votre voiture est une preuve de soin et de sérieux. Sans AUTYVO Trace, ce travail est invisible. Avec notre rapport, cette histoire devient lisible, valorisée et incontestable.",
-    "reportTitle": "Le Rapport de Confiance",
-    "reportDescription": "AUTYVO Trace est le dossier complet qui réunit :",
-    "reportItems": [
-      "Vos documents (factures, réparations) classés et organisés automatiquement.",
-      "Les données officielles du Ministère (SIV) pour une transparence totale."
+    "intro": "L'entretien de votre véhicule est un gage de confiance. Sans AUTYVO Trace, il reste invisible. Avec notre document, il devient transparent, vérifiable et valorisé.",
+    "tagline": "Parce qu'un acheteur mérite de savoir et qu'un entretien soigné mérite d'être reconnu.",
+    "overviewTitle": "AUTYVO Trace en un coup d'œil",
+    "overviewItems": [
+      "Infos techniques : version, motorisation, équipements.",
+      "Environnement : émissions de CO₂.",
+      "Données officielles du Ministère : traçabilité administrative claire.",
+      "Contrôle technique : dates, résultats et points à surveiller.",
+      "Historique d'entretien complet : opérations régulières et lourdes.",
+      "Plan d'entretien : prochaines échéances et rappels.",
+      "Sécurité et garanties : tests officiels et garanties restantes.",
+      "Analyse simplifiée : état du véhicule et points de vigilance."
     ],
-    "conclusion": "Quand vous partagez ce rapport sécurisé, vous transmettez la confiance, vous prouvez la qualité de l'entretien, et vous justifiez le prix le plus juste. Votre voiture se vend plus vite, et au meilleur prix.",
+    "whyShareTitle": "Pourquoi partager AUTYVO Trace",
+    "whyShareItems": [
+      "Un document unique et structuré, pas seulement des factures dispersées.",
+      "Rassure l'acheteur sur l'entretien, le kilométrage, la sécurité et la situation administrative.",
+      "Valorise l'entretien effectué et apporte une confiance totale sur l'état du véhicule."
+    ],
     "bonus": {
       "title": "Bonus Exclusif",
       "description": "Téléchargez l'application aujourd'hui et générez votre premier rapport AUTYVO Trace gratuitement !",
