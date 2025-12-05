@@ -26,12 +26,12 @@ const TrustSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary text-center mb-16">
           {t('trust.title')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-5xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center gap-12 max-w-4xl mx-auto">
           {partners.map((partner) => (
             <button
               key={partner.id}
               onClick={() => handlePartnerClick(partner.url, partner.name)}
-              className="bg-white p-8 rounded-xl shadow-md w-full flex items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group"
+              className="bg-white p-8 rounded-xl shadow-md w-64 flex items-center justify-center hover:shadow-xl transition-shadow cursor-pointer group"
               aria-label={`Visiter le site de ${partner.name}`}
             >
               <img
