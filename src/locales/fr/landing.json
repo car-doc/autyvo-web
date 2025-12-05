@@ -29,38 +29,38 @@
     ]
   },
   "benefits": {
-    "title": "Les Bénéfices AUTYVO",
-    "subtitle": "La solution complète qui simplifie la gestion, facilite l'entretien et maximise la valeur de votre véhicule.",
+    "title": "Pourquoi choisir AUTYVO pour mon véhicule ?",
+    "subtitle": "AUTYVO s'occupe de tout : vos documents et papiers sont rangés et l'historique de votre véhicule est toujours prêt.",
     "items": [
       {
         "image": "zero_papier.png",
-        "title": "Zéro papier, tout est centralisé",
-        "description": "AUTYVO centralise automatiquement tous vos documents de véhicule (factures, assurances, CT, etc.), mettant fin aux papiers perdus et aux oublis administratifs."
+        "title": "Ne perdez plus vos papiers",
+        "description": "AUTYVO met tout au même endroit, tout seul ! Fini les recherches de factures ou de contrôles techniques perdus. C'est simple comme bonjour."
       },
       {
         "image": "Scanne.png",
-        "title": "Organisez et classez en quelques secondes",
-        "description": "Grâce à la reconnaissance intelligente, prenez une photo de vos documents (factures, assurances, contrôles techniques...) : tout est instantanément classé, archivé et accessible sur l'application."
+        "title": "Classement fait en un clin d'œil",
+        "description": "Une simple photo de votre facture avec votre téléphone, et hop ! L'application met tout à sa place. Tout est clair, rangé, et facile à retrouver."
       },
       {
         "image": "Entretien_planifie.png",
-        "title": "Un entretien planifié et sans stress",
-        "description": "Notre moteur intelligent crée automatiquement un plan de maintenance adapté à votre véhicule et vous envoie des rappels précis pour ne jamais manquer une échéance critique."
+        "title": "N'oubliez plus les rendez-vous importants",
+        "description": "Notre petite machine intelligente vous dit quand faire la vidange ou le contrôle technique. Elle envoie des rappels pour que vous soyez toujours en règle, sans y penser."
       },
       {
         "image": "Bouclier.png",
-        "title": "Fiabilité accrue et longévité maximisée",
-        "description": "Anticipez les problèmes, maintenez un suivi rigoureux et réduisez les risques de pannes inattendues pour garantir la fiabilité de votre véhicule sur le long terme."
+        "title": "Votre voiture vous remerciera",
+        "description": "En suivant bien les conseils, vous évitez les grosses pannes et vous gardez votre voiture en bonne santé plus longtemps. Vous roulez tranquille, sans souci."
       },
       {
         "image": "Autyvo_trace.png",
-        "title": "Valorisez votre véhicule avec l'AUTYVO Trace",
-        "description": "Partagez un historique complet, sécurisé et professionnel de votre véhicule : les acheteurs gagnent confiance, et vous justifiez un meilleur prix de revente."
+        "title": "Vendez votre voiture sans stress",
+        "description": "Vous partagez l'historique de votre voiture. Les acheteurs voient que vous êtes sérieux, ils ont confiance, et vous n'avez pas à marchander le prix."
       },
       {
         "image": "Transfere.png",
-        "title": "Transfert de dossier sécurisé",
-        "description": "Que vous vendiez ou achetiez, transférez l'intégralité du dossier numérique du véhicule à son nouveau propriétaire en un clic, assurant la continuité de l'historique et la transparence."
+        "title": "Le dossier passe de main en main",
+        "description": "Vous vendez ? Le dossier de la voiture va directement au nouveau propriétaire. Vous achetez ? Vous recevez tout l'historique. C'est simple et sécurisé pour tout le monde."
       }
     ]
   },

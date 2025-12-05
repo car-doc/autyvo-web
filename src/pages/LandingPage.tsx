@@ -121,6 +121,63 @@ function LandingPage() {
           </button>
         )}
 
+        {/* Benefits Section */}
+        <section id="gestion-section" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-16">
+              <h1 className="text-4xl md:text-5xl font-bold text-brand-secondary mb-6">
+                {t('benefits.title')}
+              </h1>
+              <h2 className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+                {t('benefits.subtitle')}
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {(t('benefits.items', { returnObjects: true }) as Array<{ image: string; title: string; description: string }>).map((benefit, index) => {
+                const icons = [FileCheck, Scan, Sparkles, Shield, TrendingUp, ArrowRightLeft];
+                const Icon = icons[index % icons.length];
+
+                return (
+                  <div
+                    key={index}
+                    className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 hover:border-brand-primary/30 relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-primary/5 to-transparent rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-300"></div>
+
+                    <div className="relative z-10">
+                      <div className="mb-6 flex justify-center">
+                        <div className="relative">
+                          <div className="absolute inset-0 bg-brand-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                          <img
+                            src={benefitImages[benefit.image]}
+                            alt={benefit.title}
+                            className="w-44 h-44 object-contain relative z-10 transform group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-center gap-3 mb-4">
+                        <div className="p-2 bg-brand-primary/10 rounded-lg group-hover:bg-brand-primary/20 transition-colors duration-300">
+                          <Icon className="w-5 h-5 text-brand-primary" />
+                        </div>
+                      </div>
+
+                      <h3 className="text-xl font-bold text-brand-secondary mb-4 text-center group-hover:text-brand-primary transition-colors duration-300">
+                        {benefit.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed text-base text-center">
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* How It Works Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
