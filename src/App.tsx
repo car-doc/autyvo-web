@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import ScrollToTop from './components/ScrollToTop';
 import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/blog/BlogPage';
@@ -13,9 +14,11 @@ import DeleteAccountPage from './pages/account/DeleteAccountPage';
 
 const App = () => {
   return (
-    <Routes>
-      {/* Route wrapper avec Layout - Toutes les routes enfants auront Header/Footer */}
-      <Route element={<Layout />}>
+    <>
+      <ScrollToTop />
+      <Routes>
+        {/* Route wrapper avec Layout - Toutes les routes enfants auront Header/Footer */}
+        <Route element={<Layout />}>
         
         {/* Page d'accueil */}
         <Route path="/" element={<LandingPage />} />
@@ -43,9 +46,10 @@ const App = () => {
 
         {/* Gestion 404 - Redirection vers l'accueil */}
         <Route path="*" element={<Navigate to="/" replace />} />
-        
+
       </Route>
     </Routes>
+    </>
   );
 };
 
