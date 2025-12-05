@@ -15,16 +15,16 @@
     "subtitle": "3 simple steps to manage your vehicle and enhance its history.",
     "steps": [
       {
-        "title": "Vehicle identification",
-        "description": "Adding your license plate triggers registration and immediate activation of the maintenance planning engine."
+        "title": "I enter my license plate",
+        "description": "That's all you need to do for the app to identify your car and activate the maintenance planning program."
       },
       {
-        "title": "Easy input and archiving",
-        "description": "Photograph or upload your documents (invoices, insurance...). The application automatically handles their classification, archiving, and updates your history."
+        "title": "I take photos of my documents",
+        "description": "A simple photo of your documents (invoices, inspections...): AUTYVO files and organizes them automatically. Your history updates instantly."
       },
       {
-        "title": "Sharing and continuity",
-        "description": "Share your vehicle's history via AUTYVO Trace to reassure buyers, or transfer the entire file to the new owner at the end of the transaction."
+        "title": "I share the history",
+        "description": "You show the secure file (AUTYVO Trace) to the buyer to reassure them. The complete transfer of the file to the new owner is done in a single click, without delay."
       }
     ]
   },

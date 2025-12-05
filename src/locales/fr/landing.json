@@ -15,16 +15,16 @@
     "subtitle": "3 étapes simples pour gérer votre véhicule et valoriser son historique.",
     "steps": [
       {
-        "title": "Identification du véhicule",
-        "description": "L'ajout de votre plaque d'immatriculation déclenche l'enregistrement et l'activation immédiate du moteur de planification d'entretien."
+        "title": "Je rentre ma plaque",
+        "description": "C'est tout ce qu'il faut faire pour que l'application identifie votre voiture et active le programme de planification d'entretien."
       },
       {
-        "title": "Saisie facilitée et archivage",
-        "description": "Photographiez ou téléchargez vos documents (factures, assurances...). L'application gère automatiquement leur classement, leur archivage, et la mise à jour de votre historique."
+        "title": "Je prends mes papiers en photo",
+        "description": "Une simple photo de vos documents (factures, CT...) : AUTYVO les range et les classe automatiquement. Votre historique se met à jour instantanément."
       },
       {
-        "title": "Partage et continuité",
-        "description": "Partagez l'historique de votre véhicule via l'AUTYVO Trace pour rassurer les acheteurs, ou transférez tout le dossier au nouveau propriétaire en fin de transaction."
+        "title": "Je partage l'historique",
+        "description": "Vous montrez le dossier sécurisé (AUTYVO Trace) à l'acheteur pour le rassurer. Le transfert complet du dossier au nouveau propriétaire se fait en un seul clic, sans délai."
       }
     ]
   },
