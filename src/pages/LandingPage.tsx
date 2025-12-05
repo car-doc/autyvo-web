@@ -302,48 +302,38 @@ function LandingPage() {
               <div className="lg:sticky lg:top-24">
                 <div className="relative max-w-md mx-auto lg:max-w-none">
                   <div className="absolute -inset-4 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-3xl blur-2xl"></div>
-                  <div className="relative bg-white p-6 rounded-2xl shadow-2xl border border-gray-200 group hover:shadow-3xl transition-all">
+                  <div className="relative bg-white p-6 rounded-2xl shadow-2xl border border-gray-200 group hover:shadow-3xl transition-all overflow-hidden">
                     <img
                       src={traceImage}
                       alt="Exemple d'AUTYVO Trace"
                       className="rounded-xl w-full h-auto object-cover"
                     />
-                    <div className="absolute -bottom-3 -right-3 bg-gradient-to-r from-brand-primary to-brand-primary-dark text-white px-5 py-3 rounded-xl shadow-xl font-bold text-sm flex items-center gap-2 group-hover:scale-105 transition-transform">
-                      <FileCheck size={20} />
-                      Rapport Complet
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Full Width Bonus Section */}
-          <div className="mt-12 relative">
-            <div className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-secondary relative overflow-hidden rounded-3xl mx-4 sm:mx-6 lg:mx-8">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.1),transparent_70%)]"></div>
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
-              <div className="max-w-5xl mx-auto px-6 py-10 sm:py-12 relative">
-                <div className="max-w-2xl mx-auto text-center">
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-5">
-                    <div className="bg-white/20 p-2.5 rounded-xl backdrop-blur-sm">
-                      <Gift className="text-white" size={24} />
+                    {/* Bonus CTA Overlay */}
+                    <div className="absolute bottom-6 left-6 right-6 bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-secondary rounded-2xl overflow-hidden shadow-2xl">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.1),transparent_70%)]"></div>
+                      <div className="relative px-6 py-8 text-center">
+                        <div className="flex flex-col items-center gap-3 mb-4">
+                          <div className="bg-white/20 p-2.5 rounded-xl backdrop-blur-sm">
+                            <Gift className="text-white" size={24} />
+                          </div>
+                          <h3 className="text-xl font-bold text-white">
+                            {t('trace.bonus.title')}
+                          </h3>
+                        </div>
+                        <p className="text-sm text-white/95 mb-5 leading-relaxed">
+                          {t('trace.bonus.description')}
+                        </p>
+                        <button
+                          onClick={scrollToDownload}
+                          className="bg-white text-brand-secondary px-5 py-3 rounded-xl font-bold text-sm hover:bg-gray-50 transition-all transform hover:scale-105 hover:shadow-xl shadow-lg inline-flex items-center gap-2 group/btn"
+                        >
+                          <span>{t('trace.bonus.cta')}</span>
+                          <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform flex-shrink-0" />
+                        </button>
+                      </div>
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white">
-                      {t('trace.bonus.title')}
-                    </h3>
                   </div>
-                  <p className="text-base sm:text-lg text-white/95 mb-6 leading-relaxed">
-                    {t('trace.bonus.description')}
-                  </p>
-                  <button
-                    onClick={scrollToDownload}
-                    className="bg-white text-brand-secondary px-6 py-3 rounded-xl font-bold text-base hover:bg-gray-50 transition-all transform hover:scale-105 hover:shadow-xl shadow-lg inline-flex items-center gap-2 group"
-                  >
-                    <span>{t('trace.bonus.cta')}</span>
-                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                  </button>
                 </div>
               </div>
             </div>
