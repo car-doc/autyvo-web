@@ -14,7 +14,6 @@ import {
   ArrowRightLeft,
   ArrowRight,
   Star,
-  Sparkle,
   Check,
 } from 'lucide-react';
 
@@ -102,10 +101,6 @@ function LandingPage() {
                 </div>
               </div>
               <div className="flex flex-col justify-center space-y-8 animate-slide-up">
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full w-fit">
-                  <Sparkle className="w-4 h-4 text-brand-accent animate-pulse" />
-                  <span className="text-sm font-medium text-white">Application N°1 pour la gestion automobile</span>
-                </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight bg-gradient-to-r from-white via-white to-gray-300 bg-clip-text text-transparent">
                   {t('hero.title')}
                 </h1>
