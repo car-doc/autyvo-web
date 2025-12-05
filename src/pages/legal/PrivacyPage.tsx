@@ -35,7 +35,8 @@ const PrivacyPage: React.FC = () => {
 
       <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-brand-secondary via-brand-secondary-dark to-gray-900 text-white py-20 relative overflow-hidden">
+        <section className="bg-gradient-to-br from-brand-secondary via-brand-secondary-dark to-gray-900 text-white py-24 relative overflow-hidden">
+          <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-20 left-20 w-64 h-64 bg-brand-primary rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-primary rounded-full blur-3xl"></div>
@@ -46,18 +47,18 @@ const PrivacyPage: React.FC = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-brand-primary opacity-20 blur-xl rounded-full"></div>
                   <div className="relative bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
-                    <Shield size={64} className="text-brand-primary" />
+                    <Shield size={64} className="text-brand-primary drop-shadow-lg" />
                   </div>
                 </div>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.5), 0 2px 10px rgba(0, 0, 0, 0.3)' }}>
                 {t('header.title')}
               </h1>
-              <p className="text-xl md:text-2xl text-gray-200 mb-4 font-medium">
+              <p className="text-xl md:text-2xl text-white mb-4 font-medium drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.4)' }}>
                 {t('header.subtitle')}
               </p>
-              <div className="inline-block bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
-                <p className="text-sm md:text-base text-gray-300">
+              <div className="inline-block bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/30 shadow-xl">
+                <p className="text-sm md:text-base text-white font-medium">
                   {t('header.version')}
                 </p>
               </div>
