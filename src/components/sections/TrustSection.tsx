@@ -2,13 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { usePartners } from '@/data/partners';
 import kivoLogo from '@/assets/images/partners/kivo-logo.jpg';
 import frenchTechLogo from '@/assets/images/partners/french-tech-logo.png';
-import backcarLogo from '@/assets/images/partners/backcar-logo.png';
 
 // Map des imports statiques (requis par Vite)
 const logoMap: Record<string, string> = {
   '/src/assets/images/partners/kivo-logo.jpg': kivoLogo,
   '/src/assets/images/partners/french-tech-logo.png': frenchTechLogo,
-  '/src/assets/images/partners/backcar-logo.png': backcarLogo,
 };
 
 const TrustSection: React.FC = () => {

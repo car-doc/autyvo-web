@@ -25,13 +25,6 @@ export const partners: Partner[] = [
     url: 'https://lafrenchtech.gouv.fr/fr/',
     alt: 'La French Tech',
   },
-  {
-    id: 'backcar',
-    name: 'Back Car',
-    logo: '/src/assets/images/partners/backcar-logo.png',
-    url: 'https://www.backcar.fr/',
-    alt: 'Back Car',
-  },
 ];
 
 /**
