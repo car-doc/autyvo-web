@@ -192,7 +192,7 @@ function LandingPage() {
               <div className="space-y-12 relative">
                 <div className="absolute left-6 top-12 bottom-12 w-0.5 bg-gradient-to-b from-brand-primary via-brand-primary to-transparent hidden md:block" />
 
-                {(t('howItWorks.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
+                {(t('howItWorks.steps', { returnObjects: true }) as Array<{ title: string; description: string; cta?: string }>).map((step, index) => (
                   <div key={index} className="flex gap-6 relative">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-dark rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                       {index + 1}
@@ -200,6 +200,15 @@ function LandingPage() {
                     <div className="flex-1 pt-2">
                       <h3 className="text-2xl font-bold text-brand-secondary mb-3">{step.title}</h3>
                       <p className="text-gray-600 leading-relaxed text-lg">{step.description}</p>
+                      {step.cta && (
+                        <Link
+                          to="/trace"
+                          className="inline-flex items-center gap-2 mt-4 text-brand-primary hover:text-brand-primary-dark font-semibold transition-colors group"
+                        >
+                          {step.cta}
+                          <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -233,9 +242,11 @@ function LandingPage() {
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h1 className="text-5xl md:text-6xl font-bold text-brand-secondary mb-6">
-                AUTYVO Trace
-              </h1>
+              <Link to="/trace" className="inline-block group">
+                <h1 className="text-5xl md:text-6xl font-bold text-brand-secondary mb-6 group-hover:text-brand-primary transition-colors">
+                  AUTYVO Trace
+                </h1>
+              </Link>
               <h2 className="text-2xl md:text-3xl text-gray-700 font-medium">
                 Parce qu'un véhicule bien entretenu mérite d'être reconnu.
               </h2>

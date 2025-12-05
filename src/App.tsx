@@ -6,6 +6,7 @@ import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/blog/BlogPage';
 import { ProPage } from './pages/pro';
 import { IaPage } from './pages/technologies';
+import { TraceDetailsPage } from './pages/trace';
 import TermsPage from './pages/legal/TermsPage';
 import PrivacyPage from './pages/legal/PrivacyPage';
 import DeleteAccountPage from './pages/account/DeleteAccountPage';
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/pro" element={<ProPage />} />
         <Route path="/ia" element={<IaPage />} />
+        <Route path="/trace" element={<TraceDetailsPage />} />
         
         {/* Pages légales */}
         <Route path="/legal/terms" element={<TermsPage />} />
