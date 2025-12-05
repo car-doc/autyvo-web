@@ -253,77 +253,68 @@ function LandingPage() {
 
         {/* AUTYVO Trace Section */}
         <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(59,130,246,0.03),transparent_50%)]"></div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div className="grid lg:grid-cols-[1fr_440px] gap-12 lg:gap-16 items-start">
-              <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-full text-brand-primary text-sm font-semibold mb-2">
-                  <Sparkle size={16} />
-                  Fonctionnalité Phare
+          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-3 bg-brand-primary/10 px-6 py-3 rounded-full mb-6">
+                <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-2 rounded-lg">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-brand-primary font-bold text-base uppercase tracking-wide">
+                  {t('trace.title')}
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-brand-secondary mb-6">
+                {t('trace.subtitle')}
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
+              <div className="space-y-6">
+                <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                  <p className="text-gray-800 text-lg leading-relaxed">{t('trace.intro')}</p>
                 </div>
 
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3 sm:gap-4">
-                    <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-2.5 sm:p-3 rounded-xl sm:rounded-2xl shadow-lg flex-shrink-0">
-                      <Shield className="text-white" size={32} />
+                <div className="bg-gradient-to-br from-brand-primary/5 via-white to-brand-secondary/5 p-8 rounded-2xl border-2 border-brand-primary/20 shadow-xl hover:shadow-2xl transition-shadow">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-3 rounded-xl shadow-md">
+                      <FileCheck className="text-white" size={24} />
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-secondary mb-2 sm:mb-3 leading-tight">
-                        {t('trace.title')}
-                      </h2>
-                      <p className="text-lg sm:text-xl md:text-2xl font-semibold text-brand-primary">
-                        {t('trace.subtitle')}
-                      </p>
-                    </div>
+                    <h3 className="text-2xl font-bold text-brand-secondary">
+                      {t('trace.reportTitle')}
+                    </h3>
                   </div>
+                  <p className="text-gray-800 text-base font-semibold mb-6">{t('trace.reportDescription')}</p>
+                  <ul className="space-y-3">
+                    {(t('trace.reportItems', { returnObjects: true }) as string[]).map((item, index) => (
+                      <li key={index} className="flex items-start gap-3 group">
+                        <div className="bg-gradient-to-br from-green-500 to-green-600 p-2 rounded-lg shadow-md flex-shrink-0 group-hover:scale-110 transition-transform">
+                          <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <span className="text-gray-800 font-medium pt-0.5 text-base">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                <div className="space-y-6 sm:space-y-8 text-base sm:text-lg text-gray-700 leading-relaxed">
-                  <div className="bg-gradient-to-br from-white to-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-200">
-                    <p className="text-gray-800 text-lg sm:text-xl leading-relaxed">{t('trace.intro')}</p>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-brand-primary/5 via-white to-brand-secondary/5 p-6 sm:p-8 rounded-2xl border-2 border-brand-primary/20 shadow-xl">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark p-3 rounded-xl shadow-md">
-                        <FileCheck className="text-white" size={24} />
-                      </div>
-                      <h3 className="text-2xl sm:text-3xl font-bold text-brand-secondary">
-                        {t('trace.reportTitle')}
-                      </h3>
-                    </div>
-                    <p className="text-gray-800 text-lg font-semibold mb-6">{t('trace.reportDescription')}</p>
-                    <ul className="space-y-4">
-                      {(t('trace.reportItems', { returnObjects: true }) as string[]).map((item, index) => (
-                        <li key={index} className="flex items-start gap-4 group">
-                          <div className="bg-gradient-to-br from-green-500 to-green-600 p-2.5 rounded-lg shadow-md flex-shrink-0 group-hover:scale-110 transition-transform">
-                            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                            </svg>
-                          </div>
-                          <span className="text-gray-800 font-medium pt-1.5 text-base sm:text-lg">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-200">
-                    <p className="text-gray-800 text-lg sm:text-xl font-semibold leading-relaxed">{t('trace.conclusion')}</p>
-                  </div>
+                <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                  <p className="text-gray-800 text-lg font-semibold leading-relaxed">{t('trace.conclusion')}</p>
                 </div>
               </div>
 
-              <div className="lg:sticky lg:top-24 order-1 lg:order-2">
+              <div className="lg:sticky lg:top-24">
                 <div className="relative max-w-md mx-auto lg:max-w-none">
                   <div className="absolute -inset-4 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-3xl blur-2xl"></div>
-                  <div className="relative bg-white p-4 rounded-2xl shadow-2xl border border-gray-200">
+                  <div className="relative bg-white p-6 rounded-2xl shadow-2xl border border-gray-200 group hover:shadow-3xl transition-all">
                     <img
                       src={traceImage}
                       alt="Exemple d'AUTYVO Trace"
                       className="rounded-xl w-full h-auto object-cover"
                     />
-                    <div className="absolute -bottom-4 -right-4 bg-brand-primary text-white px-4 py-2 lg:px-6 lg:py-3 rounded-xl shadow-xl font-bold text-xs lg:text-sm flex items-center gap-2">
-                      <FileCheck size={18} className="lg:w-5 lg:h-5" />
+                    <div className="absolute -bottom-3 -right-3 bg-gradient-to-r from-brand-primary to-brand-primary-dark text-white px-5 py-3 rounded-xl shadow-xl font-bold text-sm flex items-center gap-2 group-hover:scale-105 transition-transform">
+                      <FileCheck size={20} />
                       Rapport Complet
                     </div>
                   </div>
