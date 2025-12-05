@@ -19,7 +19,6 @@ import {
 
 import heroImage from '@/assets/images/illustrations/transaction.jpeg';
 import stickyImage from '@/assets/images/app/dashboard-screen.jpeg';
-import verificationImage from '@/assets/images/illustrations/autyvo-schema.png';
 import zeroPapierImg from '@/assets/images/app/zero_papier.png';
 import scanneImg from '@/assets/images/app/Scanne.png';
 import entretienPlanifieImg from '@/assets/images/app/Entretien_planifie.png';
@@ -231,50 +230,6 @@ function LandingPage() {
                 <Download size={24} />
                 {t('cta.button')}
               </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Verification Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="mb-6">
-                  <div className="flex gap-4 mb-2">
-                    <span className="text-5xl flex-shrink-0">{t('verification.emoji')}</span>
-                    <div className="flex flex-col">
-                      <h2 className="text-3xl md:text-4xl font-bold text-brand-secondary">
-                        {t('verification.title')}
-                      </h2>
-                      <p className="text-2xl md:text-3xl font-bold text-brand-secondary mt-2">
-                        {t('verification.subtitle')}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-2xl font-semibold text-brand-primary mb-8">
-                  {t('verification.tagline')}
-                </p>
-
-                <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
-                  <p>{t('verification.description')}</p>
-
-                  <p className="font-semibold text-brand-secondary text-xl">
-                    {t('verification.rule')}
-                  </p>
-
-                  <p>{t('verification.conclusion')}</p>
-                </div>
-              </div>
-
-              <div className="flex justify-center">
-                <img
-                  src={verificationImage}
-                  alt="Schéma de vérification AUTYVO"
-                  className="rounded-xl shadow-2xl w-full max-w-md h-auto object-contain"
-                />
-              </div>
             </div>
           </div>
         </section>
