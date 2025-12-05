@@ -142,24 +142,32 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "What is AUTYVO Trace?",
-        "answer": "AUTYVO Trace is the system that transforms your daily management into verified value. Every action recorded automatically becomes verifiable proof for future buyers."
-      },
-      {
-        "question": "How does the verification engine work?",
-        "answer": "Our engine cross-references your data with official sources (SIV, Histovec) to guarantee the authenticity of your vehicle's history. It's an independent trusted third party."
-      },
-      {
-        "question": "What is Bridge Dev?",
-        "answer": "Bridge Dev is the feature that allows you to generate a complete and verified history report of your vehicle, ready to be shared with potential buyers."
-      },
-      {
-        "question": "Is the app free?",
-        "answer": "Yes, the app is FREE for life! Use all the tools to manage your vehicle and get your complete history without ever paying anything.\n\nAUTYVO Trace Verified is a Premium service. Our verification guarantee is so powerful that it monetizes upon resale. You only pay to transform your history into concrete and tamper-proof proof of value."
+        "question": "Is the app complicated to use?",
+        "answer": "Not at all! You enter your license plate, take photos of your documents, and AUTYVO organizes them automatically. It's quick and very simple."
       },
       {
         "question": "Is my data secure?",
-        "answer": "Absolutely. We comply with GDPR and your data is encrypted. You keep full control over what you share and with whom."
+        "answer": "Yes. Your information is protected and we comply with GDPR. You always keep control: you decide when and with whom to share your AUTYVO Trace."
+      },
+      {
+        "question": "Can I use AUTYVO for an old vehicle?",
+        "answer": "Of course! AUTYVO works for all vehicles, old or recent. The more complete your history, the more value your vehicle gains."
+      },
+      {
+        "question": "How does the app know when I need maintenance?",
+        "answer": "AUTYVO automatically calculates your next deadlines (oil change, technical inspection, etc.) based on your model and mileage. You receive a reminder at the right time."
+      },
+      {
+        "question": "Does AUTYVO Trace really help me sell more easily?",
+        "answer": "Yes. A clear, complete, and verified AUTYVO Trace immediately reassures a buyer. They see the maintenance, mileage, and real history of your vehicle. They know what they're buying, which creates trust.\nAnd rest assured: you have complete control over what you share."
+      },
+      {
+        "question": "Is AUTYVO free?",
+        "answer": "The app is free for your daily management. You can also create your first AUTYVO Trace for free to see your history."
+      },
+      {
+        "question": "Why is your history more reliable than a simple paper folder?",
+        "answer": "Because AUTYVO verifies your information with official government data. Your file is clear, reliable, and has no surprises."
       }
     ]
   },
