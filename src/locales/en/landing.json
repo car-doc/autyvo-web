@@ -35,17 +35,17 @@
       {
         "image": "zero_papier.png",
         "title": "Never lose your documents again",
-        "description": "AUTYVO puts everything in one place, automatically! No more searching for lost invoices or technical inspections. It's as simple as that."
+        "description": "The app stores all your important documents (invoices, insurance...) in one place. It's always there when you need it."
       },
       {
         "image": "Scanne.png",
         "title": "Filing done in a flash",
-        "description": "Just take a photo of your invoice with your phone, and voila! The app puts everything in its place. Everything is clear, organized, and easy to find."
+        "description": "Take a photo with your phone, and AUTYVO files and organizes the document automatically. It's easy and always done right."
       },
       {
         "image": "Entretien_planifie.png",
         "title": "Never forget important appointments",
-        "description": "Our smart assistant tells you when to do an oil change or technical inspection. It sends reminders so you're always compliant, without thinking about it."
+        "description": "The app reminds you of all maintenance and important deadlines. You no longer need to calculate: you're always compliant."
       },
       {
         "image": "Bouclier.png",
@@ -55,12 +55,12 @@
       {
         "image": "Autyvo_trace.png",
         "title": "Sell your car stress-free",
-        "description": "You share your car's history. Buyers see you're serious, they trust you, and you don't have to haggle the price."
+        "description": "Show the complete history to buyers: they trust you immediately and see that your car deserves its value."
       },
       {
         "image": "Transfere.png",
         "title": "The file passes from hand to hand",
-        "description": "Selling? The car file goes directly to the new owner. Buying? You receive the full history. It's simple and secure for everyone."
+        "description": "When you sell, you transfer the entire car history in one click to the new owner. It's simple, secure, and nobody loses anything."
       }
     ]
   },

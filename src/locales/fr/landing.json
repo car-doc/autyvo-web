@@ -35,17 +35,17 @@
       {
         "image": "zero_papier.png",
         "title": "Ne perdez plus vos papiers",
-        "description": "AUTYVO met tout au même endroit, tout seul ! Fini les recherches de factures ou de contrôles techniques perdus. C'est simple comme bonjour."
+        "description": "L'application range tous vos documents importants (factures, assurances...) au même endroit. C'est toujours là quand vous en avez besoin."
       },
       {
         "image": "Scanne.png",
         "title": "Classement fait en un clin d'œil",
-        "description": "Une simple photo de votre facture avec votre téléphone, et hop ! L'application met tout à sa place. Tout est clair, rangé, et facile à retrouver."
+        "description": "Prenez une photo avec votre téléphone, et AUTYVO range et classe le document automatiquement. C'est facile et toujours bien fait."
       },
       {
         "image": "Entretien_planifie.png",
         "title": "N'oubliez plus les rendez-vous importants",
-        "description": "Notre petite machine intelligente vous dit quand faire la vidange ou le contrôle technique. Elle envoie des rappels pour que vous soyez toujours en règle, sans y penser."
+        "description": "L'application vous rappelle tous les entretiens et échéances importantes. Vous n'avez plus besoin de calculer : vous êtes toujours en règle."
       },
       {
         "image": "Bouclier.png",
@@ -55,12 +55,12 @@
       {
         "image": "Autyvo_trace.png",
         "title": "Vendez votre voiture sans stress",
-        "description": "Vous partagez l'historique de votre voiture. Les acheteurs voient que vous êtes sérieux, ils ont confiance, et vous n'avez pas à marchander le prix."
+        "description": "Montrez l'historique complet aux acheteurs : ils vous font confiance tout de suite et voient que votre voiture mérite sa valeur."
       },
       {
         "image": "Transfere.png",
         "title": "Le dossier passe de main en main",
-        "description": "Vous vendez ? Le dossier de la voiture va directement au nouveau propriétaire. Vous achetez ? Vous recevez tout l'historique. C'est simple et sécurisé pour tout le monde."
+        "description": "Quand vous vendez, vous transmettez tout l'historique de la voiture en un clic au nouveau propriétaire. C'est simple, sécurisé, et personne ne perd rien."
       }
     ]
   },
