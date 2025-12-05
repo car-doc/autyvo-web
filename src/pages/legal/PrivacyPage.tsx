@@ -109,6 +109,164 @@ const PrivacyPage: React.FC = () => {
               </div>
             </div>
 
+            {/* Section 4: Finalités du traitement */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.purpose.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {t('sections.purpose.intro')}
+                </p>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-brand-secondary text-white">
+                        <th className="border border-gray-300 px-4 py-2 text-left">
+                          {(t('sections.purpose.table.headers', { returnObjects: true }) as string[])[0]}
+                        </th>
+                        <th className="border border-gray-300 px-4 py-2 text-left">
+                          {(t('sections.purpose.table.headers', { returnObjects: true }) as string[])[1]}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(t('sections.purpose.table.rows', { returnObjects: true }) as string[][]).map((row, index) => (
+                        <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                          <td className="border border-gray-300 px-4 py-2">{row[0]}</td>
+                          <td className="border border-gray-300 px-4 py-2">{row[1]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 5: Destinataires */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.recipients.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {t('sections.recipients.intro')}
+                </p>
+                <ul className="space-y-2 mb-4">
+                  {(t('sections.recipients.items', { returnObjects: true }) as string[]).map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="text-brand-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-gray-700 font-medium">{t('sections.recipients.note')}</p>
+              </div>
+            </div>
+
+            {/* Section 6: Cookies */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.cookies.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed">{t('sections.cookies.content')}</p>
+              </div>
+            </div>
+
+            {/* Section 7: Conservation */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.retention.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {t('sections.retention.intro')}
+                </p>
+                <ul className="space-y-3">
+                  {(t('sections.retention.items', { returnObjects: true }) as Array<{ type: string; duration: string }>).map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="text-brand-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <span className="font-semibold text-brand-secondary">{item.type}</span>
+                        <span className="text-gray-700"> {item.duration}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Section 8: Sécurité */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.security.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {t('sections.security.intro')}
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {(t('sections.security.items', { returnObjects: true }) as Array<{ title: string; detail: string }>).map((item, index) => (
+                    <div key={index} className="flex items-start p-4 bg-gray-50 rounded-lg">
+                      <Shield className="text-brand-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <p className="font-semibold text-brand-secondary">{item.title}</p>
+                        <p className="text-gray-600 text-sm">{item.detail}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Section 9: Violations */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.breach.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed">{t('sections.breach.content')}</p>
+              </div>
+            </div>
+
+            {/* Section 10: Droits */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.rights.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {t('sections.rights.intro')}
+                </p>
+                <ul className="space-y-2 mb-4">
+                  {(t('sections.rights.items', { returnObjects: true }) as string[]).map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="text-brand-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-gray-700 leading-relaxed mb-2">
+                  {t('sections.rights.exercise')}{' '}
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-brand-primary hover:underline font-medium">
+                    {CONTACT_EMAIL}
+                  </a>
+                </p>
+                <p className="text-gray-700 leading-relaxed">{t('sections.rights.cnil')}</p>
+              </div>
+            </div>
+
+            {/* Section 11: Mises à jour */}
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-4">
+                {t('sections.updates.title')}
+              </h2>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <p className="text-gray-700 leading-relaxed">{t('sections.updates.content')}</p>
+              </div>
+            </div>
+
             {/* Conclusion */}
             <div className="bg-gradient-to-r from-brand-primary to-brand-primary-dark p-8 rounded-xl text-white text-center">
               <Shield size={48} className="mx-auto mb-4" />
