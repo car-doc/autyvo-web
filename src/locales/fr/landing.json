@@ -93,13 +93,13 @@
     }
   },
   "verification": {
-    "title": "Vérification et Transparence",
-    "subtitle": "Un Standard Clair",
+    "title": "Vérification et transparence",
+    "subtitle": "Un standard clair pour votre véhicule",
     "emoji": "🛡️",
-    "tagline": "L'authenticité est notre engagement.",
-    "description": "AUTYVO va au-delà de la simple organisation de documents. Notre plateforme croise automatiquement vos informations avec les données officielles du SIV et valide chaque élément de l'historique grâce à un moteur indépendant. Chaque donnée est ainsi authentique, vérifiée et transparente.",
-    "rule": "La règle est simple : Sans transparence, n'achetez pas.",
-    "conclusion": "Les utilisateurs savent exactement ce qu'ils consultent et peuvent s'appuyer sur des informations fiables pour prendre leurs décisions."
+    "tagline": "Avec AUTYVO, chaque information sur votre véhicule est authentique et vérifiée.",
+    "description": "Notre plateforme ne se contente pas de ranger vos documents : elle compare automatiquement vos informations avec les données officielles du Ministère et confirme que tout est correct.",
+    "rule": "La transparence vous permet de savoir exactement ce que vous achetez.",
+    "conclusion": "Grâce à AUTYVO, vous consultez uniquement des informations fiables, pour prendre vos décisions en toute confiance."
   },
   "security": {
     "title": "Vos données en sécurité",
