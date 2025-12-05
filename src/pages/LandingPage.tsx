@@ -326,9 +326,6 @@ function LandingPage() {
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
               <div className="max-w-5xl mx-auto px-6 py-10 sm:py-12 relative">
                 <div className="max-w-2xl mx-auto text-center">
-                  <p className="text-base sm:text-lg font-semibold text-white/90 italic mb-4">
-                    {t('trace.tagline')}
-                  </p>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-5">
                     <div className="bg-white/20 p-2.5 rounded-xl backdrop-blur-sm">
                       <Gift className="text-white" size={24} />
